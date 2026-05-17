@@ -20,7 +20,7 @@ footer_text: >
   hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: VLSI, SoC, mixed-signal design, RF design, semiconductor, digital design, RISC-V, PLL, Bengaluru, IEEE, doctoral research, Devesh Bhaskaran
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚡ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://devesh-b.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
