@@ -4,16 +4,10 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 6
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+cv_pdf: /assets/pdf/Devesh_Academic_CV.pdf
 ---
 
-My full CV is available as a PDF on request — email me at [deveshbhaskaran@gmail.com](mailto:deveshbhaskaran@gmail.com).
-
-A summary is below.
+A summary is below. Download the PDF above for the full version.
 
 ---
 
@@ -50,6 +44,22 @@ GPA: 9.32/10 · Silver Medal (9th Rank in University) · Best Outgoing Student, 
 
 ---
 
+## Leadership
+
+**Workshop Instructor — SoC Architecture & Design Theory for IoT** · PES University · Jun 2025
+5-day intensive program, IoT MakerSpace, Department of ECE.
+
+**Co-founder & Treasurer — IEEE RAS and Sensors Council Student Branch** · PES University · Nov 2022–May 2024
+Co-founded the branch. Event Head for national-level hackathon UNIMATE and ideathon HealthSpark.
+
+**President — IEEE SSCS and Photonics Student Branch** · PES University · Apr 2023–Apr 2024
+Hosted Prof. Shanthi Pavan (IIT Madras) for IEEE Day. Organized layout hackathons with Marvell Technology.
+
+**Mentor Head — InFeynite Hackathon** · PES University · Jun 2024–Sep 2024
+Led the mentorship team, managed technical sessions, supported participant project development.
+
+---
+
 ## Skills
 
 **Languages:** SystemVerilog, Verilog, C, C++, Python, Java, Embedded C, Assembly, SQL
@@ -59,3 +69,28 @@ GPA: 9.32/10 · Silver Medal (9th Rank in University) · Best Outgoing Student, 
 **Tools:** Cadence Virtuoso/SpectreRF/Genus, Vivado, Quartus Prime, LT-Spice, CST Studio, MATLAB, QUCS
 
 **Languages (spoken):** English (Advanced), Hindi (Intermediate), Telugu (Intermediate), Kannada (Intermediate), Tamil (Novice)
+
+---
+
+## Certifications
+
+- IEEE Webinar on Pre-Silicon RTL Verification using UVM — IEEE Bangalore Section (Mar 2025)
+- Webinar on Science Narrative Twisted Radio Waves — BIT Mesra (Mar 2025)
+- Analog IC Design: Schematic to Layout Workshop — ABV-IIITM Gwalior (Dec 2024)
+- BHARAT 6G VISION — Department of Telecommunications, India (Sep 2024)
+- CeNSE Summer School on Semiconductor Technology and Microfabrication — IISc (Jun 2024)
+- Standard Cell Design, Characterization and Synthesis — CHIPS, PES University (Jan 2024)
+- Semiconductor Device Modelling and Simulation — QuaNaD, PES University (Dec 2023)
+- VLSI Design Flow: RTL to GDS — NPTEL (Oct 2023)
+
+---
+
+## Professional Memberships
+
+- IEEE Member (CAS, SSCS, MTTS) — Membership ID: 98147149 · Aug 2022–Present
+
+---
+
+## References
+
+Available on request.
