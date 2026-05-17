@@ -1,189 +1,145 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
-
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+  name: Devesh Bhaskaran
+  label: Digital Design Engineer, Analog Devices India
+  email: deveshbhaskaran@gmail.com
+  location: Bengaluru, Karnataka, India
 
   sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
-
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Analog Devices India
+        position: Digital Design Engineer
+        location: Bengaluru, India
+        start_date: 2025
+        end_date: present
+        summary: Working on 10BASE-T1S PHY, PLL, GPT, UART, and PWM architectures for next-generation battery-management ICs in electric vehicles.
         highlights:
-          - Relativity
-          - Description 2.
+          - Focus on system-level timing, jitter, and ISO functional safety.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Analog Devices India
+        position: Digital Design Intern
+        location: Bengaluru, India
+        start_date: 2025-01
+        end_date: 2025-06
+        summary: Developed split configuration architecture for a dual-core lockstep processor.
         highlights:
-          - Description 1.
-          - Description 2.
+          - Implemented a functionally safe SPI module with configurable clock polarity and phase.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Analog Devices India
+        position: Digital Design Intern
+        location: Bengaluru, India
+        start_date: 2024-06
+        end_date: 2024-07
+        summary: Optimized a PWM IP core (10% improvement in modulation accuracy).
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Integrated and analyzed a CAN FD architecture increasing data rates to 5 Mbps.
+
+      - company: PES University
+        position: Teaching Assistant – RF Microelectronics
+        location: Bengaluru, India
+        start_date: 2025-01
+        end_date: 2025-03
+        summary: Designed and delivered an advanced module on oscillator circuit design, developing Spectre RF simulation workflows.
+
+      - company: PES University
+        position: Teaching Assistant – Computer Organization and Design
+        location: Bengaluru, India
+        start_date: 2024-08
+        end_date: 2024-12
+        summary: Taught RISC-V Assembly and guided students in designing single-cycle RISC-V processors.
+
+    Education:
+      - institution: PES University
+        studyType: B.Tech, Electronics and Communication Engineering
+        area: "GPA 9.32/10 · Silver Medal (9th Rank) · Best Outgoing Student, ECE"
+        location: Bengaluru, India
+        start_date: 2021
+        end_date: 2025
+
+      - institution: Christ Junior College
+        studyType: Pre-University Education
+        area: "Grade: 96.5%"
+        location: Bengaluru, India
+        start_date: 2019
+        end_date: 2021
+
+      - institution: Clarence High School
+        studyType: Secondary Education (ICSE)
+        area: "Grade: 95.6%"
+        location: Bengaluru, India
+        start_date: 2017
+        end_date: 2019
+        highlights:
+          - Principal's Trophy for Excellence
+          - Smt. Narayanikutty Menon Memorial Trophy (perfect score, ICSE Mathematics)
 
     Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - title: Silver Medal — 9th Rank in University
+        date: 2025
+        awarder: PES University
+      - title: Best Outgoing Student, ECE
+        date: 2025
+        awarder: PES University
+      - title: "Tiny Tapeout Award — Chipalooza ($300)"
+        date: 2024
+        awarder: Efabless Corporation
+      - title: MRD Scholarship — Top 5% of university
+        date: 2022
+        awarder: PES University
+        summary: Semesters III–VI (2022–2025)
+      - title: Second Place — Mahil AI Hackathon
+        date: 2023
+        awarder: PES University
+      - title: C.N. Rao Scholarship — Top 10% of university
+        date: 2021
+        awarder: PES University
+        summary: Semesters I–II (2021–2022)
+      - title: Third Place — HackLoop Hackathon
+        date: 2021
+        awarder: PES University
+      - title: Principal's Trophy for Excellence
+        date: 2019
+        awarder: Clarence High School
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+    Leadership:
+      - bullet: "**Workshop Instructor — SoC Architecture & Design Theory for IoT** · PES University · Jun 2025 — 5-day intensive program, IoT MakerSpace, Department of ECE."
+      - bullet: "**Co-founder & Treasurer — IEEE RAS and Sensors Council Student Branch** · PES University · Nov 2022–May 2024 — Co-founded the branch. Event Head for national-level hackathon UNIMATE and ideathon HealthSpark."
+      - bullet: "**President — IEEE SSCS and Photonics Student Branch** · PES University · Apr 2023–Apr 2024 — Hosted Prof. Shanthi Pavan (IIT Madras) for IEEE Day. Organized layout hackathons with Marvell Technology."
+      - bullet: "**Mentor Head — InFeynite Hackathon** · PES University · Jun–Sep 2024 — Led the mentorship team, managed technical sessions, supported participant project development."
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+    Technical Skills:
+      - bullet: "**Languages:** SystemVerilog, Verilog, C, C++, Python, Java, Embedded C, Assembly, SQL"
+      - bullet: "**Specialized:** Digital Circuit Design, RF Circuit Design, Analog Circuit Design, Mixed-Signal Systems"
+      - bullet: "**Tools:** Cadence Virtuoso/SpectreRF/Genus, Vivado, Quartus Prime, LT-Spice, CST Studio, MATLAB, QUCS, RIPES"
+      - bullet: "**Spoken languages:** English (Advanced), Hindi (Intermediate), Telugu (Intermediate), Kannada (Intermediate), Tamil (Novice)"
 
     Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+      - name: IEEE Webinar on Pre-Silicon RTL Verification using UVM
+        issuer: IEEE Bangalore Section
+        date: 2025-03
+      - name: Webinar on Science Narrative — Twisted Radio Waves
+        issuer: BIT Mesra
+        date: 2025-03
+      - name: Analog IC Design — Schematic to Layout Workshop
+        issuer: ABV-IIITM Gwalior
+        date: 2024-12
+      - name: BHARAT 6G VISION
+        issuer: Department of Telecommunications, India
+        date: 2024-09
+      - name: CeNSE Summer School on Semiconductor Technology and Microfabrication
+        issuer: IISc
+        date: 2024-06
+      - name: Standard Cell Design, Characterization and Synthesis
+        issuer: CHIPS, PES University
+        date: 2024-01
+      - name: Semiconductor Device Modelling and Simulation
+        issuer: QuaNaD, PES University
+        date: 2023-12
+      - name: VLSI Design Flow — RTL to GDS
+        issuer: NPTEL
+        date: 2023-10
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+    Memberships:
+      - bullet: "IEEE Member (CAS, SSCS, MTTS) — Membership ID: 98147149 · Aug 2022–Present"
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    Further Information:
+      - bullet: References available on request.
