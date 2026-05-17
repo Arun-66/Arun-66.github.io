@@ -75,67 +75,79 @@ nav a.nav-link:hover {
   color: var(--accent-primary) !important;
 }
 
-/* --- Hero profile section (about page) --- */
-.profile {
-  text-align: center !important;
+/* --- Hero: force centered layout (override al-folio float) --- */
+.about-wrapper > .row {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  margin-bottom: 32px !important;
 }
 
-.profile img {
+.profile {
+  width: 100% !important;
+  text-align: center !important;
+  float: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  margin: 0 auto 32px !important;
+  padding: 0 !important;
+}
+
+.profile img,
+.profile img.img-fluid {
   width: 120px !important;
   height: 120px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
-  margin: 0 auto 20px !important;
-  display: block !important;
-  border: 2px solid rgba(44, 95, 93, 0.2) !important;
+  object-position: center top !important;
   float: none !important;
+  display: block !important;
+  margin: 0 auto 16px !important;
+  border: 2px solid rgba(44, 95, 93, 0.25) !important;
 }
 
-.profile .address,
-.profile .more-info {
+.profile .address p,
+.profile .more-info p {
   text-align: center !important;
   font-family: var(--font-mono) !important;
   font-size: 12px !important;
-  line-height: 1.8 !important;
+  line-height: 1.9 !important;
   color: #888 !important;
-  margin-top: 8px !important;
+  margin: 0 !important;
 }
 
-/* --- Name heading --- */
-h1.post-title,
-h1 {
+/* Force the text column to be full width and centered */
+.about-wrapper .col,
+.about-wrapper [class*="col-"] {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+
+/* Name h1 centered */
+.post-title,
+h1.post-title {
   font-family: var(--font-serif) !important;
   font-size: 36px !important;
   font-weight: 500 !important;
   letter-spacing: -0.3px !important;
-  line-height: 1.2 !important;
   text-align: center !important;
-  margin-bottom: 8px !important;
+  margin-bottom: 4px !important;
 }
 
-/* --- Subtitle (italic pull-quote) --- */
-.post-description,
-.profile-subtitle,
-header .subtitle,
-p.subtitle {
+/* Subtitle italic centered */
+.post-description {
   font-family: var(--font-serif) !important;
   font-style: italic !important;
-  font-size: 18px !important;
-  line-height: 1.6 !important;
+  font-size: 17px !important;
   text-align: center !important;
-  color: #666 !important;
-  max-width: 500px;
-  margin: 0 auto 28px !important;
+  color: #777 !important;
+  margin: 0 auto 32px !important;
+  max-width: 560px !important;
+  display: block !important;
 }
 
-html[data-theme='dark'] .post-description,
-html[data-theme='dark'] .profile-subtitle,
-html[data-theme='dark'] header .subtitle,
-html[data-theme='dark'] p.subtitle {
+html[data-theme='dark'] .post-description {
   color: #aaa !important;
 }
 
@@ -302,6 +314,25 @@ footer a {
     padding-left: 18px !important;
     padding-right: 18px !important;
   }
+}
+
+/* --- Fix collaborate link in footer contact note --- */
+.contact-note a,
+footer .contact-note a,
+p.contact-note a {
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  font-style: normal !important;
+}
+
+/* --- Section dividers --- */
+.news,
+.latest-posts,
+.publications.selected {
+  padding-top: 32px !important;
+  border-top: 0.5px solid rgba(128,128,128,0.15) !important;
+  margin-top: 32px !important;
 }
 
 /* --- Scrollbar (subtle) --- */
