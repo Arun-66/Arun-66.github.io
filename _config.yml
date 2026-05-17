@@ -15,7 +15,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   where digital, analog, and RF have to learn to live together. Based in Bengaluru, heading
   toward doctoral research in SoC and mixed-signal design.
 footer_text: >
-  © 2026 Devesh Bhaskaran. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
   and the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme,
   hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: VLSI, SoC, mixed-signal design, RF design, semiconductor, digital design, RISC-V, PLL, Bengaluru, IEEE, doctoral research, Devesh Bhaskaran

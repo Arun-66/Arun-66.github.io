@@ -1,6 +1,8 @@
 ---
 layout: about
 title: about
+nav_order: 1
+nav: true
 permalink: /
 subtitle: <em>Working at the boundary where digital, analog, and RF have to learn to live together.</em>
 

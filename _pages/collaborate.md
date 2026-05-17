@@ -4,7 +4,7 @@ permalink: /collaborate/
 title: collaborate
 description: What I'm interested in working on, and how to reach me.
 nav: true
-nav_order: 9
+nav_order: 7
 ---
 
 I'm open to conversations and collaboration on:
