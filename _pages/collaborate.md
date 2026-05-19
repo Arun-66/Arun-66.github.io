@@ -7,7 +7,7 @@ nav: true
 nav_order: 7
 ---
 
-I'm open to conversations and collaboration on:
+<p style="text-align:center; color: #888; font-size: 14px; margin-bottom: 24px;">I'm open to conversations and collaboration on:</p>
 
 - **Mixed-signal and RF circuit design** — especially low-jitter timing, PLL architectures, and oscillator design
 - **SoC and embedded systems** — RISC-V cores, peripheral interfaces, functional safety

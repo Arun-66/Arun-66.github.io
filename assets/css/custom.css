@@ -379,10 +379,9 @@ footer a {
   }
 }
 
-/* Footer contact note — normalize all text and links */
-footer .contact-note,
-footer p.contact-note,
-.footer .contact-note {
+/* Contact note — normalize all text and links (.social .contact-note in about.liquid) */
+.social .contact-note,
+.contact-note {
   font-size: 13px !important;
   font-family: var(--font-sans) !important;
   font-weight: 400 !important;
@@ -390,8 +389,8 @@ footer p.contact-note,
   text-align: center !important;
 }
 
-footer .contact-note a,
-footer p.contact-note a {
+.social .contact-note a,
+.contact-note a {
   font-size: 13px !important;
   font-family: var(--font-sans) !important;
   font-weight: 400 !important;
@@ -542,4 +541,70 @@ nav, footer {
     margin: 0 !important;
     line-height: 1.7 !important;
   }
+}
+
+/* --- CV page: nuclear box removal --- */
+body .card,
+body .card-body,
+body .card.mt-3,
+body .card.p-3,
+body .list-group,
+body .list-group-item,
+body .list-group-item:first-child,
+body .list-group-item:last-child {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Restore card padding only where explicitly needed (NOT cv page) */
+.projects-page .card,
+.post .card {
+  background: var(--global-bg-color) !important;
+  border: 0.5px solid rgba(128, 128, 128, 0.15) !important;
+  border-radius: var(--border-radius-md) !important;
+  padding: 16px !important;
+}
+
+/* --- Page subtitles/descriptions --- */
+.page-description,
+header .page-description,
+.post-description,
+p.post-description {
+  text-align: center !important;
+  font-style: italic !important;
+  font-family: var(--font-serif) !important;
+  font-size: 17px !important;
+  color: #777 !important;
+  max-width: 520px !important;
+  margin: 0 auto 28px !important;
+  display: block !important;
+}
+
+html[data-theme='dark'] .page-description,
+html[data-theme='dark'] p.post-description {
+  color: #aaa !important;
+}
+
+/* Footer: force all text to same size */
+footer * {
+  font-size: 13px !important;
+  font-family: var(--font-sans) !important;
+  letter-spacing: normal !important;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
 }
