@@ -26,14 +26,6 @@ nav_order: 6
   }
 </style>
 
-<div style="margin-bottom: 1.5rem;">
-  <a href="/assets/pdf/Devesh_Academic_CV.pdf" target="_blank" rel="noopener noreferrer"
-     style="display: inline-flex; align-items: center; gap: 0.4rem; background: #2C5F5D; color: #fff;
-            padding: 0.35rem 0.9rem; border-radius: 4px; font-size: 0.85rem; text-decoration: none;">
-    <i class="fa-solid fa-file-pdf"></i> Download PDF
-  </a>
-</div>
-
 <div class="cv-shell">
 
   <!-- Sidebar navigation -->
@@ -236,7 +228,7 @@ nav_order: 6
 
     <!-- ── Further Information ────────────────────── -->
     <div class="card mt-3 p-3">
-      <h3 class="card-title font-weight-medium">Further Information</h3>
+      <h3 class="card-title font-weight-medium">References</h3>
       <ul class="list-group list-group-flush font-weight-light" style="font-size:0.93em;">
         <li class="list-group-item">References available on request.</li>
       </ul>
