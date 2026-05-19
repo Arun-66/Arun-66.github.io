@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SATCOM transceivers — how they work and where the hard problems are
-date: 2026-05-19 10:00:00+0530
+date: 2025-05-01 10:00:00+0530
 description: A technical overview of satellite communication transceiver architecture, with a focus on Ka-band systems and the open IC design problems that still don't have clean answers.
 tags: RF SATCOM circuits research
 categories: notes
