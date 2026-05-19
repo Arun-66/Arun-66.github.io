@@ -14,10 +14,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Devesh Bhaskaran — Digital Design Engineer at Analog Devices, working at the boundary
   where digital, analog, and RF have to learn to live together. Based in Bengaluru, heading
   toward doctoral research in SoC and mixed-signal design.
-footer_text: >
-  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
-  and the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme,
-  hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+footer_text: ""
 keywords: VLSI, SoC, mixed-signal design, RF design, semiconductor, digital design, RISC-V, PLL, Bengaluru, IEEE, doctoral research, Devesh Bhaskaran
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -95,7 +92,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Notes
+blog_name: NOTES
 blog_description: Reading notes, half-formed thoughts, and writing about circuits.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts

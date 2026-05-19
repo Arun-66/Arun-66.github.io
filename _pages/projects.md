@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: PROJECTS
 permalink: /projects/
 description: Selected hardware, analog, and software projects — from RISC-V SoCs to mixed-signal IC design.
 nav: true

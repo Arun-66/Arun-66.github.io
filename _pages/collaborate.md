@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /collaborate/
-title: collaborate
+title: COLLABORATE
 description: What I'm interested in working on, and how to reach me.
 nav: true
 nav_order: 7
