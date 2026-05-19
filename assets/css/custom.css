@@ -432,3 +432,60 @@ footer p,
   background: rgba(44, 95, 93, 0.3);
   border-radius: 2px;
 }
+
+/* --- Text justification for body content --- */
+.post-content p,
+article p,
+.about-content p,
+.page-content p {
+  text-align: justify !important;
+  hyphens: auto !important;
+  -webkit-hyphens: auto !important;
+  word-break: break-word;
+}
+
+/* Don't justify short elements or headings */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.post-description,
+.profile .more-info p,
+.profile .address p,
+nav, footer {
+  text-align: unset !important;
+  hyphens: none !important;
+}
+
+/* --- Fix news date column wrapping on mobile --- */
+@media (max-width: 768px) {
+  .news table {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .news table td:first-child {
+    min-width: 80px !important;
+    white-space: nowrap !important;
+    font-size: 11px !important;
+    padding-right: 12px !important;
+  }
+
+  .news table td {
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+  }
+}
+
+/* --- Tighten profile info block on mobile --- */
+@media (max-width: 991px) {
+  .profile .more-info,
+  .profile .address {
+    margin-top: 4px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .profile .more-info p,
+  .profile .address p {
+    margin: 0 !important;
+    line-height: 1.7 !important;
+  }
+}
