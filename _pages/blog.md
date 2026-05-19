@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: Ground State
+title: BLOG
 nav: true
 nav_order: 5
 pagination:
