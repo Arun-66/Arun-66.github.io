@@ -435,6 +435,33 @@ footer p,
   border-radius: 2px;
 }
 
+/* --- CV page: remove card boxes, render as plain sections --- */
+#cv .card,
+#cv .card-body,
+#cv .list-group,
+#cv .list-group-item,
+.cv-page .card,
+.cv-page .card-body,
+.page-cv .card,
+.page-cv .card-body {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Add simple section separator instead of boxes */
+#cv h2,
+#cv h3.card-title,
+.cv-page h2,
+.cv-page h3 {
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.2) !important;
+  padding-bottom: 6px !important;
+  margin-bottom: 16px !important;
+  margin-top: 36px !important;
+}
+
 /* --- CV page card dark mode fix --- */
 html[data-theme='dark'] .card,
 html[data-theme='dark'] .card-body,
