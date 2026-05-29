@@ -24,11 +24,6 @@ categories:
         tags: [ADC, Wallace Tree, Cadence Virtuoso]
         slug: "flash-adc"
 
-      - title: "Tiny Tapeout — Chipalooza"
-        description: "Custom ICs submitted to Efabless Chipalooza open shuttle. Received $300 Tiny Tapeout Award (2024)."
-        tags: [OpenLane, GDS, Efabless, Analog]
-        slug: "tiny-tapeout"
-
   - name: "Digital Design"
     entries:
       - title: "Embedded SoC Design (RV32IM)"
