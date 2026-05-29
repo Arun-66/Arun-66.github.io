@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" width="90" height="150">
+  <!-- Stage 4: FPGA developer — PYNQ board in hands, deep in hardware -->
+
+  <ellipse cx="60" cy="192" rx="22" ry="5" fill="#00000015"/>
+
+  <!-- Legs -->
+  <rect x="46" y="118" width="13" height="52" rx="4" fill="#2C2C3E"/>
+  <rect x="62" y="118" width="13" height="52" rx="4" fill="#24243A"/>
+
+  <!-- Shoes — clean black -->
+  <ellipse cx="52" cy="173" rx="9" ry="5" fill="#1A1A2A"/>
+  <ellipse cx="68" cy="173" rx="9" ry="5" fill="#151520"/>
+  <rect x="44" y="169" width="16" height="4" rx="2" fill="#151520"/>
+  <rect x="60" y="169" width="16" height="4" rx="2" fill="#101018"/>
+
+  <!-- Body — lab coat / white overshirt -->
+  <rect x="38" y="65" width="40" height="55" rx="7" fill="#F5F5F5"/>
+  <rect x="38" y="65" width="40" height="55" rx="7" fill="none" stroke="#DDD" stroke-width="1"/>
+  <!-- Lapels -->
+  <path d="M53 65 L50 80 L60 74 L70 80 L67 65" fill="#ECECEC" stroke="#DDD" stroke-width="0.8"/>
+  <!-- Chest pocket -->
+  <rect x="40" y="80" width="10" height="9" rx="1.5" fill="none" stroke="#CCC" stroke-width="0.8"/>
+  <!-- Pen in pocket -->
+  <rect x="43" y="78" width="2" height="12" rx="1" fill="#4A7FCB"/>
+  <rect x="46" y="78" width="2" height="12" rx="1" fill="#E04A2F"/>
+
+  <!-- Left arm — extended holding PYNQ board -->
+  <rect x="18" y="67" width="22" height="11" rx="5" fill="#FDBCB4"/>
+  <ellipse cx="19" cy="72" rx="6" ry="5" fill="#FDBCB4"/>
+
+  <!-- Right arm -->
+  <rect x="78" y="67" width="22" height="11" rx="5" fill="#FDBCB4"/>
+  <ellipse cx="99" cy="72" rx="6" ry="5" fill="#FDBCB4"/>
+
+  <!-- PYNQ-Z2 Board held in both hands -->
+  <rect x="6" y="75" width="46" height="30" rx="3" fill="#CC3A22" stroke="#333" stroke-width="1.2"/>
+  <!-- Zynq chip -->
+  <rect x="10" y="78" width="14" height="12" rx="1" fill="#1A1A2E"/>
+  <text x="17" y="87" font-size="4" text-anchor="middle" fill="#4A7FCB" font-family="monospace">Zynq</text>
+  <!-- DDR -->
+  <rect x="26" y="78" width="8" height="6" rx="0.5" fill="#333" stroke="#555" stroke-width="0.5"/>
+  <text x="30" y="83" font-size="3" text-anchor="middle" fill="#AAA" font-family="monospace">DDR</text>
+  <!-- GPIO headers -->
+  <rect x="10" y="92" width="36" height="4" rx="0.5" fill="#FFD700" opacity="0.8"/>
+  <line x1="12" y1="92" x2="12" y2="96" stroke="#333" stroke-width="0.5"/>
+  <line x1="15" y1="92" x2="15" y2="96" stroke="#333" stroke-width="0.5"/>
+  <line x1="18" y1="92" x2="18" y2="96" stroke="#333" stroke-width="0.5"/>
+  <line x1="21" y1="92" x2="21" y2="96" stroke="#333" stroke-width="0.5"/>
+  <line x1="24" y1="92" x2="24" y2="96" stroke="#333" stroke-width="0.5"/>
+  <line x1="27" y1="92" x2="27" y2="96" stroke="#333" stroke-width="0.5"/>
+  <!-- LEDs -->
+  <circle cx="42" cy="80" r="2" fill="#00FF00" opacity="0.9"/>
+  <circle cx="42" cy="80" r="4" fill="#00FF00" opacity="0.15"/>
+  <circle cx="46" cy="80" r="2" fill="#FF4400" opacity="0.9"/>
+  <!-- USB port -->
+  <rect x="46" y="87" width="6" height="8" rx="1" fill="#888" stroke="#555" stroke-width="0.8"/>
+
+  <!-- Board extends over right hand too -->
+  <rect x="52" y="75" width="2" height="30" rx="1" fill="#BB3A22"/>
+
+  <!-- Neck -->
+  <rect x="55" y="55" width="10" height="12" rx="3" fill="#FDBCB4"/>
+
+  <!-- Head -->
+  <ellipse cx="60" cy="38" rx="22" ry="24" fill="#FDBCB4"/>
+
+  <!-- Hair -->
+  <path d="M38 30 Q40 10 60 8 Q80 10 82 30 Q78 15 60 14 Q42 15 38 30Z" fill="#1A0800"/>
+
+  <!-- Ears -->
+  <ellipse cx="38" cy="40" rx="4" ry="5" fill="#F0A898"/>
+  <ellipse cx="82" cy="40" rx="4" ry="5" fill="#F0A898"/>
+
+  <!-- Eyes — excited, wide -->
+  <ellipse cx="52" cy="38" rx="5.5" ry="5.5" fill="white"/>
+  <ellipse cx="68" cy="38" rx="5.5" ry="5.5" fill="white"/>
+  <circle cx="53" cy="39" r="3.8" fill="#2C1A0E"/>
+  <circle cx="69" cy="39" r="3.8" fill="#2C1A0E"/>
+  <circle cx="55" cy="37" r="1.3" fill="white"/>
+  <circle cx="71" cy="37" r="1.3" fill="white"/>
+
+  <!-- Eyebrows — raised with excitement -->
+  <path d="M46 29 Q52 25 57 29" stroke="#1A0800" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M63 29 Q68 25 73 29" stroke="#1A0800" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M58 45 Q60 49 62 45" stroke="#E09080" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+
+  <!-- Big grin -->
+  <path d="M49 52 Q60 61 71 52" stroke="#C07060" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <!-- Cheeks flushed with excitement -->
+  <ellipse cx="44" cy="47" rx="6" ry="4" fill="#FFB0A0" opacity="0.5"/>
+  <ellipse cx="76" cy="47" rx="6" ry="4" fill="#FFB0A0" opacity="0.5"/>
+</svg>
