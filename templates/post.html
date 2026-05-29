@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+
+<article class="max-w-4xl mx-auto px-6 py-20">
+
+  <!-- Header -->
+  <header class="mb-12 max-w-2xl">
+    <div class="eyebrow mb-4">Writing</div>
+    <h1 class="font-heading font-semibold text-3xl md:text-4xl tracking-tight leading-tight text-base-content">
+      {{ page.title }}
+    </h1>
+    {% if page.description %}
+    <p class="mt-3 text-base-content/55 text-base leading-relaxed font-light">{{ page.description }}</p>
+    {% endif %}
+    <div class="font-mono text-xs text-base-content/30 mt-4 flex flex-wrap items-center gap-3">
+      {% if page.date %}<span>{{ page.date }}</span>{% endif %}
+      {% if page.tags %}
+      {% for tag in page.tags %}
+      <a href="/tags/{{ tag }}.html"
+         class="text-base-content/40 hover:text-primary transition-colors">{{ tag }}</a>{% if not loop.last %}<span class="opacity-30">·</span>{% endif %}
+      {% endfor %}
+      {% endif %}
+    </div>
+  </header>
+
+  <!-- Divider -->
+  <div class="border-t border-base-200 mb-10"></div>
+
+  <!-- Body -->
+  <div class="prose prose-sm md:prose-base max-w-3xl text-justify
+              prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+              prose-headings:font-heading prose-headings:font-semibold prose-headings:tracking-tight
+              prose-headings:text-left
+              prose-code:font-mono prose-code:text-primary
+              dark:prose-invert">
+    {{ content }}
+  </div>
+
+  <!-- Footer nav -->
+  <div class="mt-14 pt-6 border-t border-base-200">
+    <a href="/blog/" class="text-xs font-mono text-primary/70 hover:text-primary transition-colors">
+      ← back to all posts
+    </a>
+  </div>
+
+</article>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto px-6 py-16">
+
+  <div class="mb-10">
+    <div class="eyebrow mb-3">Tag</div>
+    <h1 class="font-heading font-semibold text-2xl tracking-tight text-base-content">
+      #{{ tag_name }}
+    </h1>
+  </div>
+
+  <div class="border-t border-base-200 pt-10 space-y-4">
+    {% for post in posts %}
+    <a href="{{ post.url }}/"
+       class="card-glow block border border-base-200 rounded-lg p-5 hover:border-primary/30 transition-colors group">
+      <div class="font-mono text-xs text-base-content/35 mb-2">{{ post.date }}</div>
+      <h2 class="font-heading font-medium text-base text-base-content group-hover:text-primary transition-colors">
+        {{ post.title }}
+      </h2>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="mt-8">
+    <a href="/blog/" class="text-xs font-mono text-primary/70 hover:text-primary transition-colors">
+      ← all posts
+    </a>
+  </div>
+
+</div>
+
+{% endblock %}
