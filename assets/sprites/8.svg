@@ -1,47 +1,117 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120">
-  <!-- Stage 8: Professional Engineer with chip/achievement -->
-  <!-- Head -->
-  <circle cx="40" cy="20" r="13" fill="#FDBCB4" stroke="#333" stroke-width="1.5"/>
-  <!-- Hair -->
-  <path d="M27 16 Q40 5 53 16 Q52 9 40 8 Q28 9 27 16Z" fill="#1A0A00"/>
-  <!-- Confident eyes -->
-  <circle cx="35" cy="19" r="2.2" fill="#333"/>
-  <circle cx="45" cy="19" r="2.2" fill="#333"/>
-  <!-- Big confident smile -->
-  <path d="M33 25 Q40 31 47 25" stroke="#333" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" width="90" height="150">
+  <!-- Stage 8: The Engineer — holding silicon chip, confident, arrived -->
+
+  <ellipse cx="60" cy="192" rx="22" ry="5" fill="#00000018"/>
+
+  <!-- Legs — premium dark trousers -->
+  <rect x="46" y="118" width="13" height="52" rx="4" fill="#12141E"/>
+  <rect x="62" y="118" width="13" height="52" rx="4" fill="#0E1018"/>
+
+  <!-- Premium oxford shoes -->
+  <ellipse cx="52" cy="174" rx="11" ry="5.5" fill="#08080E"/>
+  <ellipse cx="68" cy="174" rx="11" ry="5.5" fill="#060608"/>
+  <rect x="42" y="170" width="20" height="4" rx="2" fill="#060608"/>
+  <rect x="58" y="170" width="20" height="4" rx="2" fill="#040406"/>
+  <!-- Shoe shine highlights -->
+  <ellipse cx="48" cy="171" rx="4" ry="2" fill="white" opacity="0.12"/>
+  <ellipse cx="64" cy="171" rx="4" ry="2" fill="white" opacity="0.12"/>
+
+  <!-- Body — sharp blazer, open collar -->
+  <!-- Blazer body -->
+  <rect x="34" y="62" width="48" height="58" rx="8" fill="#1E2A3A"/>
+  <!-- Inner shirt -->
+  <rect x="50" y="62" width="16" height="58" fill="#F0F0F0"/>
+  <!-- Lapels (sharp) -->
+  <path d="M50 62 L40 82 L60 74" fill="#162030" stroke="#0E1828" stroke-width="1"/>
+  <path d="M70 62 L80 82 L60 74" fill="#162030" stroke="#0E1828" stroke-width="1"/>
+  <!-- Shirt visible -->
+  <line x1="60" y1="74" x2="60" y2="118" stroke="#E0E0E0" stroke-width="1"/>
+  <circle cx="60" cy="82" r="1.5" fill="#CCC"/>
+  <circle cx="60" cy="92" r="1.5" fill="#CCC"/>
+  <!-- Pocket square -->
+  <path d="M36 72 L44 72 L42 65 L38 65Z" fill="#3B4A6B" opacity="0.7"/>
+
+  <!-- Belt — subtle -->
+  <rect x="46" y="117" width="24" height="4" rx="1" fill="#0A0A0A"/>
+  <rect x="57" y="116" width="6" height="6" rx="1" fill="#888"/>
+
+  <!-- Left arm — raised high holding chip triumphantly -->
+  <rect x="22" y="62" width="14" height="48" rx="5" fill="#FDBCB4" transform="rotate(-35 36 62)"/>
+  <!-- Shirt cuff left -->
+  <ellipse cx="15" cy="52" rx="6" ry="5" fill="#FDBCB4"/>
+
+  <!-- Right arm — at side, relaxed -->
+  <rect x="81" y="64" width="14" height="55" rx="5" fill="#FDBCB4"/>
+  <rect x="81" y="111" width="14" height="6" rx="2" fill="#F0F0F0" stroke="#DDD" stroke-width="0.5"/>
+  <ellipse cx="88" cy="120" rx="6" ry="5" fill="#FDBCB4"/>
+
+  <!-- Silicon chip held up — the crown jewel -->
+  <!-- Chip package -->
+  <rect x="2" y="36" width="20" height="20" rx="1.5" fill="#B8C0C8" stroke="#8A9098" stroke-width="1.2"/>
+  <rect x="4" y="38" width="16" height="16" rx="0.5" fill="#0D1117"/>
+  <!-- Circuit traces on die -->
+  <line x1="6" y1="42" x2="18" y2="42" stroke="#4A90D9" stroke-width="0.8"/>
+  <line x1="6" y1="46" x2="18" y2="46" stroke="#7EC8A4" stroke-width="0.8"/>
+  <line x1="6" y1="50" x2="18" y2="50" stroke="#E8C547" stroke-width="0.8"/>
+  <line x1="10" y1="38" x2="10" y2="54" stroke="#FF6B35" stroke-width="0.8"/>
+  <line x1="14" y1="38" x2="14" y2="54" stroke="#A855F7" stroke-width="0.8"/>
+  <!-- Micro blocks -->
+  <rect x="6" y="39" width="3" height="3" fill="#4A90D9" opacity="0.8"/>
+  <rect x="15" y="39" width="3" height="3" fill="#FF6B35" opacity="0.8"/>
+  <rect x="6" y="51" width="3" height="3" fill="#7EC8A4" opacity="0.8"/>
+  <rect x="15" y="51" width="3" height="3" fill="#E8C547" opacity="0.8"/>
+  <!-- Pin rows -->
+  <line x1="4" y1="40" x2="1" y2="40" stroke="#888" stroke-width="0.8"/>
+  <line x1="4" y1="43" x2="1" y2="43" stroke="#888" stroke-width="0.8"/>
+  <line x1="4" y1="46" x2="1" y2="46" stroke="#888" stroke-width="0.8"/>
+  <line x1="4" y1="49" x2="1" y2="49" stroke="#888" stroke-width="0.8"/>
+  <line x1="4" y1="52" x2="1" y2="52" stroke="#888" stroke-width="0.8"/>
+  <line x1="22" y1="40" x2="25" y2="40" stroke="#888" stroke-width="0.8"/>
+  <line x1="22" y1="43" x2="25" y2="43" stroke="#888" stroke-width="0.8"/>
+  <line x1="22" y1="46" x2="25" y2="46" stroke="#888" stroke-width="0.8"/>
+  <line x1="22" y1="49" x2="25" y2="49" stroke="#888" stroke-width="0.8"/>
+  <line x1="22" y1="52" x2="25" y2="52" stroke="#888" stroke-width="0.8"/>
+  <!-- Aura / glow around chip -->
+  <circle cx="12" cy="46" r="14" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.5" stroke-dasharray="3,2"/>
+  <circle cx="12" cy="46" r="18" fill="none" stroke="#FFD700" stroke-width="0.3" opacity="0.25" stroke-dasharray="2,3"/>
+
   <!-- Neck -->
-  <rect x="37" y="32" width="6" height="5" rx="1" fill="#FDBCB4"/>
-  <!-- Smart casual jacket -->
-  <rect x="25" y="36" width="30" height="24" rx="4" fill="#2C3E50" stroke="#333" stroke-width="1"/>
-  <!-- Jacket lapels -->
-  <path d="M37 36 L34 44 L40 41 L46 44 L43 36" fill="#3D5166" stroke="#333" stroke-width="0.8"/>
-  <!-- Shirt underneath -->
-  <path d="M38 36 L40 42 L42 36" fill="#E8E8E8"/>
-  <!-- Pants -->
-  <rect x="29" y="58" width="9" height="22" rx="2" fill="#1A2538" stroke="#333" stroke-width="1"/>
-  <rect x="42" y="58" width="9" height="22" rx="2" fill="#1A2538" stroke="#333" stroke-width="1"/>
-  <!-- Shoes -->
-  <ellipse cx="34" cy="81" rx="5.5" ry="3" fill="#0A0A0A"/>
-  <ellipse cx="46" cy="81" rx="5.5" ry="3" fill="#0A0A0A"/>
-  <!-- Arms (one arm raised holding chip, one at side) -->
-  <line x1="25" y1="42" x2="12" y2="38" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
-  <line x1="55" y1="42" x2="65" y2="55" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
-  <!-- Silicon chip held up proudly -->
-  <rect x="4" y="28" width="14" height="14" rx="1" fill="#C0C0C0" stroke="#333" stroke-width="1"/>
-  <rect x="6" y="30" width="10" height="10" rx="0.5" fill="#1a1a2e"/>
-  <!-- Chip pins -->
-  <line x1="6" y1="28" x2="6" y2="25" stroke="#AAA" stroke-width="0.8"/>
-  <line x1="9" y1="28" x2="9" y2="25" stroke="#AAA" stroke-width="0.8"/>
-  <line x1="12" y1="28" x2="12" y2="25" stroke="#AAA" stroke-width="0.8"/>
-  <line x1="15" y1="28" x2="15" y2="25" stroke="#AAA" stroke-width="0.8"/>
-  <line x1="6" y1="42" x2="6" y2="45" stroke="#AAA" stroke-width="0.8"/>
-  <line x1="9" y1="42" x2="9" y2="45" stroke="#AAA" stroke-width="0.8"/>
-  <line x1="12" y1="42" x2="12" y2="45" stroke="#AAA" stroke-width="0.8"/>
-  <line x1="15" y1="42" x2="15" y2="45" stroke="#AAA" stroke-width="0.8"/>
-  <!-- Circuit traces on chip -->
-  <line x1="8" y1="32" x2="14" y2="32" stroke="#4A90D9" stroke-width="0.8"/>
-  <line x1="8" y1="35" x2="14" y2="35" stroke="#E8C547" stroke-width="0.8"/>
-  <line x1="8" y1="38" x2="14" y2="38" stroke="#7EC8A4" stroke-width="0.8"/>
-  <!-- Star/glow around chip (achievement) -->
-  <circle cx="11" cy="35" r="9" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.6" stroke-dasharray="2,2"/>
+  <rect x="55" y="52" width="10" height="12" rx="3" fill="#FDBCB4"/>
+
+  <!-- Head -->
+  <ellipse cx="60" cy="35" rx="22" ry="24" fill="#FDBCB4"/>
+
+  <!-- Hair — clean, professional -->
+  <path d="M38 25 Q40 7 60 6 Q80 7 82 25 Q80 10 60 10 Q40 10 38 25Z" fill="#1A0800"/>
+
+  <!-- Ears -->
+  <ellipse cx="38" cy="37" rx="4" ry="5" fill="#F0A898"/>
+  <ellipse cx="82" cy="37" rx="4" ry="5" fill="#F0A898"/>
+
+  <!-- Eyes — bright, confident, proud -->
+  <ellipse cx="52" cy="36" rx="5.5" ry="5.5" fill="white"/>
+  <ellipse cx="68" cy="36" rx="5.5" ry="5.5" fill="white"/>
+  <circle cx="53" cy="37" r="4" fill="#2C1A0E"/>
+  <circle cx="69" cy="37" r="4" fill="#2C1A0E"/>
+  <circle cx="54.8" cy="35.2" r="1.4" fill="white"/>
+  <circle cx="70.8" cy="35.2" r="1.4" fill="white"/>
+  <!-- Eye sparkle extra -->
+  <circle cx="51.5" cy="38.5" r="0.7" fill="white" opacity="0.5"/>
+  <circle cx="67.5" cy="38.5" r="0.7" fill="white" opacity="0.5"/>
+
+  <!-- Eyebrows — relaxed, confident arch -->
+  <path d="M46 27 Q52 24 57 27" stroke="#1A0800" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M63 27 Q68 24 74 27" stroke="#1A0800" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M57 43 Q60 47 63 43" stroke="#E09080" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+
+  <!-- Big proud smile -->
+  <path d="M48 51 Q60 62 72 51" stroke="#C07060" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- Teeth hint -->
+  <path d="M50 53 Q60 61 70 53" fill="#FFF8F6" opacity="0.7"/>
+
+  <!-- Cheeks — warm glow of achievement -->
+  <ellipse cx="43" cy="47" rx="7" ry="4" fill="#FFB0A0" opacity="0.45"/>
+  <ellipse cx="77" cy="47" rx="7" ry="4" fill="#FFB0A0" opacity="0.45"/>
 </svg>

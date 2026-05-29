@@ -1,33 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120">
-  <!-- Stage 3: Student with laptop, starting to code -->
-  <!-- Head -->
-  <circle cx="40" cy="22" r="13" fill="#FDBCB4" stroke="#333" stroke-width="1.5"/>
-  <!-- Hair -->
-  <path d="M27 18 Q40 7 53 18 Q52 11 40 9 Q28 11 27 18Z" fill="#1A0A00"/>
-  <!-- Eyes (focused, slightly squinted) -->
-  <ellipse cx="35" cy="21" rx="2.2" ry="1.8" fill="#333"/>
-  <ellipse cx="45" cy="21" rx="2.2" ry="1.8" fill="#333"/>
-  <!-- Neutral expression -->
-  <path d="M36 27 Q40 29 44 27" stroke="#333" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" width="90" height="150">
+  <!-- Stage 3: First hardware project — soldering, curious, building -->
+
+  <ellipse cx="60" cy="192" rx="22" ry="5" fill="#00000015"/>
+
+  <!-- Legs -->
+  <rect x="46" y="118" width="13" height="52" rx="4" fill="#34495E"/>
+  <rect x="62" y="118" width="13" height="52" rx="4" fill="#2C3E50"/>
+
+  <!-- Shoes -->
+  <ellipse cx="52" cy="172" rx="9" ry="5" fill="#E04A2F"/>
+  <ellipse cx="68" cy="172" rx="9" ry="5" fill="#C03A20"/>
+  <rect x="44" y="168" width="16" height="4" rx="2" fill="#C83A20"/>
+  <rect x="60" y="168" width="16" height="4" rx="2" fill="#B83010"/>
+
+  <!-- Body — casual shirt, sleeves rolled up -->
+  <rect x="39" y="68" width="38" height="52" rx="7" fill="#5B8C5A"/>
+  <!-- Rolled sleeve left -->
+  <rect x="27" y="68" width="14" height="10" rx="3" fill="#4A7A49"/>
+  <!-- Rolled sleeve right -->
+  <rect x="76" y="68" width="14" height="10" rx="3" fill="#4A7A49"/>
+
+  <!-- Left arm — reaching down, holding circuit board -->
+  <rect x="24" y="78" width="12" height="40" rx="5" fill="#FDBCB4"/>
+  <ellipse cx="30" cy="119" rx="6" ry="5" fill="#FDBCB4"/>
+
+  <!-- Right arm — holding soldering iron -->
+  <rect x="81" y="78" width="12" height="35" rx="5" fill="#FDBCB4"/>
+  <ellipse cx="87" cy="114" rx="6" ry="5" fill="#FDBCB4"/>
+
+  <!-- Circuit board held in left hand -->
+  <rect x="14" y="115" width="30" height="20" rx="2" fill="#1A5C1A"/>
+  <!-- PCB traces -->
+  <line x1="16" y1="120" x2="40" y2="120" stroke="#C8A800" stroke-width="1.2"/>
+  <line x1="16" y1="125" x2="35" y2="125" stroke="#C8A800" stroke-width="1.2"/>
+  <line x1="30" y1="117" x2="30" y2="133" stroke="#C8A800" stroke-width="1.2"/>
+  <!-- Components -->
+  <rect x="18" y="117" width="5" height="4" rx="0.5" fill="#333" stroke="#C8A800" stroke-width="0.5"/>
+  <rect x="25" y="122" width="4" height="4" rx="0.5" fill="#555" stroke="#C8A800" stroke-width="0.5"/>
+  <circle cx="36" cy="119" r="2.5" fill="#AA6600" stroke="#C8A800" stroke-width="0.5"/>
+  <!-- LED glow -->
+  <circle cx="38" cy="130" r="2" fill="#00FF00" opacity="0.9"/>
+  <circle cx="38" cy="130" r="4" fill="#00FF00" opacity="0.2"/>
+
+  <!-- Soldering iron in right hand -->
+  <rect x="84" y="108" width="4" height="18" rx="1" fill="#888" transform="rotate(30 84 108)"/>
+  <polygon points="90,128 94,130 90,132" fill="#FF8C00"/>
+  <!-- Smoke wisps -->
+  <path d="M92 126 Q94 122 92 118 Q90 115 92 112" stroke="#888" stroke-width="1" fill="none" opacity="0.5" stroke-linecap="round"/>
+  <path d="M95 128 Q97 124 95 120" stroke="#888" stroke-width="0.8" fill="none" opacity="0.3" stroke-linecap="round"/>
+
   <!-- Neck -->
-  <rect x="37" y="34" width="6" height="5" rx="1" fill="#FDBCB4"/>
-  <!-- Body (hoodie) -->
-  <rect x="27" y="38" width="26" height="23" rx="4" fill="#3D3D5C" stroke="#333" stroke-width="1"/>
-  <!-- Hoodie pocket -->
-  <path d="M33 55 Q40 53 47 55 L47 60 L33 60Z" fill="#2C2C45" stroke="#333" stroke-width="0.8"/>
-  <!-- Jeans -->
-  <rect x="29" y="59" width="9" height="22" rx="2" fill="#34495E" stroke="#333" stroke-width="1"/>
-  <rect x="42" y="59" width="9" height="22" rx="2" fill="#34495E" stroke="#333" stroke-width="1"/>
-  <!-- Shoes (sneakers) -->
-  <ellipse cx="34" cy="82" rx="5.5" ry="3" fill="#E8502A"/>
-  <ellipse cx="46" cy="82" rx="5.5" ry="3" fill="#E8502A"/>
-  <!-- Arms reaching forward -->
-  <line x1="27" y1="44" x2="14" y2="62" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
-  <line x1="53" y1="44" x2="66" y2="62" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
-  <!-- Laptop -->
-  <rect x="6" y="60" width="22" height="14" rx="1" fill="#C0C0C0" stroke="#333" stroke-width="1"/>
-  <rect x="7" y="61" width="20" height="10" rx="0.5" fill="#1a1a2e"/>
-  <!-- Code on screen -->
-  <text x="9" y="67" font-size="3" fill="#00FF41" font-family="monospace">&gt;_ code</text>
-  <rect x="6" y="74" width="22" height="2" rx="1" fill="#888" stroke="#333" stroke-width="0.5"/>
+  <rect x="55" y="55" width="10" height="15" rx="3" fill="#FDBCB4"/>
+
+  <!-- Head -->
+  <ellipse cx="60" cy="38" rx="22" ry="24" fill="#FDBCB4"/>
+
+  <!-- Hair -->
+  <path d="M38 30 Q40 10 60 8 Q80 10 82 30 Q78 15 60 14 Q42 15 38 30Z" fill="#1A0800"/>
+
+  <!-- Safety glasses pushed up on forehead -->
+  <rect x="42" y="18" width="36" height="8" rx="4" fill="none" stroke="#4A7FCB" stroke-width="1.5"/>
+  <rect x="42" y="18" width="36" height="8" rx="4" fill="#4A7FCB" opacity="0.15"/>
+  <line x1="38" y1="22" x2="42" y2="22" stroke="#4A7FCB" stroke-width="1.5"/>
+  <line x1="78" y1="22" x2="82" y2="22" stroke="#4A7FCB" stroke-width="1.5"/>
+
+  <!-- Ears -->
+  <ellipse cx="38" cy="40" rx="4" ry="5" fill="#F0A898"/>
+  <ellipse cx="82" cy="40" rx="4" ry="5" fill="#F0A898"/>
+
+  <!-- Eyes — concentrated -->
+  <ellipse cx="52" cy="38" rx="5" ry="4" fill="white"/>
+  <ellipse cx="68" cy="38" rx="5" ry="4" fill="white"/>
+  <circle cx="53" cy="39" r="3.2" fill="#2C1A0E"/>
+  <circle cx="69" cy="39" r="3.2" fill="#2C1A0E"/>
+  <circle cx="54.5" cy="37.5" r="1.1" fill="white"/>
+  <circle cx="70.5" cy="37.5" r="1.1" fill="white"/>
+
+  <!-- Eyebrows — raised, curious -->
+  <path d="M47 30 Q52 27 57 30" stroke="#1A0800" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M63 30 Q68 27 73 30" stroke="#1A0800" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M58 45 Q60 49 62 45" stroke="#E09080" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+
+  <!-- Focused half-smile -->
+  <path d="M52 53 Q60 57 67 54" stroke="#C07060" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+  <!-- Cheeks -->
+  <ellipse cx="45" cy="48" rx="5" ry="3" fill="#FFB0A0" opacity="0.35"/>
+  <ellipse cx="75" cy="48" rx="5" ry="3" fill="#FFB0A0" opacity="0.35"/>
 </svg>
