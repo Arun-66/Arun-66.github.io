@@ -20,7 +20,7 @@
     })();
   </script>
 
-  <link rel="stylesheet" crossorigin href="/assets/syntax-DzGBSc_D.css">
+  <link rel="stylesheet" crossorigin href="/assets/syntax-CV1HFwZA.css">
 </head>
 <body class="min-h-screen bg-base-100 text-base-content antialiased">
 
@@ -196,18 +196,8 @@
                 prose-headings:text-left
                 dark:prose-invert">
       <p>I'm a final-year Electronics and Communications Engineering student at <a href="https://pes.edu/">PES University</a>, graduating in June 2026 with a GPA of 7.93/10. I'm currently a NoC Verification Intern at <a href="https://incoresemi.com/">InCore Semiconductors</a>, where I work on AMBA AHB/APB/AXI4 verification using Embedded UVM in the D language — rewriting golden reference models, scoreboards, sequences, and drivers for scalable, design-independent verification frameworks.</p>
-<p>My work spans the full hardware stack: RTL design and verification in SystemVerilog and Verilog, physical design through RTL-to-GDSII flows using Cadence toolchains, and FPGA implementation on Xilinx platforms. Projects have ranged from a complete RV32IM SoC with UART and SPI peripherals to a full FIFO implementation taken from RTL to GDSII using the SCL180 PDK, to hardware-software co-design for AES encryption on PYNQ-Z2.</p>
-<h3 id="research-interests">Research interests</h3>
-<p><strong>Processor and SoC design</strong> — I've built multiple RISC-V cores from scratch: an RV32I core, an RV32IM core with full integer and multiply/divide support, and a complete SoC integrating UART and SPI peripherals with FPGA validation. The questions that interest me are around microarchitecture trade-offs, pipeline design, and how processors integrate with the rest of a system.</p>
-<p><strong>FPGA-based neural network acceleration</strong> — I've implemented both LeNet-5 and AlexNet on FPGAs using Vitis HLS, targeting the ZCU104 and PYNQ platforms. The challenge of mapping compute-intensive inference workloads onto fixed hardware — making the right decisions about parallelism, memory bandwidth, and precision — is what draws me here.</p>
-<p><strong>Hardware security</strong> — I've built AES encryption accelerators twice: once in Intel Quartus Prime (The Enigma) and once as a hardware-software co-design on PYNQ-Z2, with the datapath on the FPGA fabric and key generation in software over AXI. Cryptographic hardware is an area I want to go deeper in.</p>
-<p><strong>Hardware verification</strong> — At InCore Semiconductors I work on AMBA AHB/APB/AXI4 verification using Embedded UVM in D, building scalable verification frameworks that can be reused across multiple DUTs. Formal and functional correctness of hardware is a problem I find genuinely interesting.</p>
-<p><strong>Physical design</strong> — I've taken a FIFO from RTL through the full Cadence flow to GDSII using the SCL180 PDK, covering synthesis, placement and routing, timing closure, and DRC/LVS. I'm interested in the constraints that physical implementation puts on digital design decisions.</p>
-<p>I also hold a publication on silver-decorated polyaniline nanocomposites (Ag-PANI) for EMI shielding, from my time as a Student Researcher at Quanad Lab.</p>
-<h3 id="leadership">Leadership</h3>
-<p>I was Club Lead of Team Vegavath Racing Club at PES University from September 2022 to December 2024, and participated in Bootstrap 2k24 under the Department of Mechanical Engineering.</p>
-<h3 id="outside-the-lab">Outside the lab</h3>
-<p>I build things — hardware and otherwise. If you're working on digital design, verification, or FPGA systems and want to talk, reach out.</p>
+<p>My work spans the full hardware stack: RTL design and verification in SystemVerilog and Verilog, physical design through RTL-to-GDSII flows using Cadence toolchains, and FPGA implementation on Xilinx platforms. Projects have ranged from a complete RV32IM SoC with UART and SPI peripherals to a FIFO taken from RTL to GDSII using the SCL180 PDK, to hardware-software co-design for AES encryption on PYNQ-Z2.</p>
+<p>If you're working on digital design, verification, or FPGA systems and want to talk, reach out.</p>
     </div>
   </section>
 
@@ -216,7 +206,7 @@
     <div class="eyebrow mb-5">Research Interests</div>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
-      <!-- Analog & RF IC Design -->
+      <!-- Processor & SoC Design -->
       <div class="group border border-base-200/60 rounded-xl p-5 hover:border-primary/25 transition-colors">
         <div class="w-full h-14 mb-4 text-primary overflow-hidden">
           <svg viewBox="0 0 120 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
@@ -233,97 +223,675 @@
             <line x1="34" y1="34" x2="27" y2="34" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
             <line x1="86" y1="22" x2="93" y2="22" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
             <line x1="86" y1="34" x2="93" y2="34" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
-            <line x1="44" y1="28" x2="76" y2="28" stroke="currentColor" stroke-width="0.8" opacity="0.18"/>
-            <line x1="60" y1="14" x2="60" y2="42" stroke="currentColor" stroke-width="0.8" opacity="0.18"/>
-            <circle cx="39" cy="15" r="2" fill="currentColor" opacity="0.30"/>
-            <polyline points="27,22 18,22 18,50 8,50" stroke="currentColor" stroke-width="0.8" opacity="0.15" fill="none"/>
-            <polyline points="93,34 102,34 102,6 112,6" stroke="currentColor" stroke-width="0.8" opacity="0.15" fill="none"/>
+            <text x="48" y="32" font-size="9" fill="currentColor" opacity="0.55" font-family="monospace">RV32IM</text>
           </svg>
         </div>
-        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">Analog & RF IC Design</h3>
-        <p class="text-xs text-base-content/45 leading-relaxed">Oscillator design, VCO-based ADCs, Ka-band circuits in sub-100nm CMOS nodes.</p>
+        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">Processor & SoC Design</h3>
+        <p class="text-xs text-base-content/45 leading-relaxed">RISC-V cores, microarchitecture trade-offs, SoC integration with peripheral interfaces.</p>
       </div>
 
-      <!-- Digital SoC & RTL -->
+      <!-- FPGA & ML Acceleration -->
       <div class="group border border-base-200/60 rounded-xl p-5 hover:border-primary/25 transition-colors">
         <div class="w-full h-14 mb-4 text-primary overflow-hidden">
           <svg viewBox="0 0 120 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
-            <polyline points="4,16 14,16 14,6 26,6 26,16 38,16 38,6 50,6 50,16 62,16 62,6 74,6 74,16 86,16 86,6 98,6 98,16 112,16"
+            <rect x="8"  y="8"  width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="28" y="8"  width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="48" y="8"  width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="68" y="8"  width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="88" y="8"  width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="8"  y="28" width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.25"/>
+            <rect x="28" y="28" width="14" height="14" rx="1" fill="currentColor" opacity="0.18" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="48" y="28" width="14" height="14" rx="1" fill="currentColor" opacity="0.18" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="68" y="28" width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.25"/>
+            <rect x="88" y="28" width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.25"/>
+            <rect x="8"  y="42" width="14" height="6"  rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.18"/>
+            <rect x="28" y="42" width="74" height="6"  rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.18"/>
+          </svg>
+        </div>
+        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">FPGA & ML Acceleration</h3>
+        <p class="text-xs text-base-content/45 leading-relaxed">AlexNet, LeNet-5 on FPGA via HLS, hardware-software co-design on Xilinx platforms.</p>
+      </div>
+
+      <!-- Hardware Verification & Physical Design -->
+      <div class="group border border-base-200/60 rounded-xl p-5 hover:border-primary/25 transition-colors">
+        <div class="w-full h-14 mb-4 text-primary overflow-hidden">
+          <svg viewBox="0 0 120 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
+            <polyline points="4,28 18,28 18,16 30,16 30,28 42,28 42,40 54,40 54,28 66,28 66,16 78,16 78,28 90,28 90,40 102,40 102,28 116,28"
                       stroke="currentColor" stroke-width="1.4" opacity="0.38" fill="none"/>
-            <polyline points="4,32 18,32 18,24 46,24 46,32 72,32 72,24 98,24 98,32 112,32"
-                      stroke="currentColor" stroke-width="1.4" opacity="0.25" fill="none"/>
-            <polyline points="4,48 22,48 22,40 42,40 42,48 64,48 64,40 84,40 84,48 112,48"
-                      stroke="currentColor" stroke-width="1.4" opacity="0.16" fill="none"/>
+            <line x1="4" y1="44" x2="116" y2="44" stroke="currentColor" stroke-width="0.8" opacity="0.15"/>
+            <circle cx="30" cy="16" r="2.5" fill="currentColor" opacity="0.45"/>
+            <circle cx="66" cy="16" r="2.5" fill="currentColor" opacity="0.45"/>
+            <circle cx="42" cy="40" r="2.5" stroke="currentColor" stroke-width="1" opacity="0.30"/>
+            <circle cx="90" cy="40" r="2.5" stroke="currentColor" stroke-width="1" opacity="0.30"/>
           </svg>
         </div>
-        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">Digital SoC & RTL Design</h3>
-        <p class="text-xs text-base-content/45 leading-relaxed">RISC-V processors, embedded SoC architectures, SystemVerilog verification.</p>
-      </div>
-
-      <!-- Signal Processing & Systems -->
-      <div class="group border border-base-200/60 rounded-xl p-5 hover:border-primary/25 transition-colors">
-        <div class="w-full h-14 mb-4 text-primary overflow-hidden">
-          <svg viewBox="0 0 120 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
-            <circle cx="18" cy="14" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
-            <circle cx="18" cy="28" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
-            <circle cx="18" cy="42" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
-            <circle cx="56" cy="21" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.28"/>
-            <circle cx="56" cy="35" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.28"/>
-            <circle cx="94" cy="28" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.38"/>
-            <line x1="23" y1="14" x2="51" y2="21" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="23" y1="14" x2="51" y2="35" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="23" y1="28" x2="51" y2="21" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="23" y1="28" x2="51" y2="35" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="23" y1="42" x2="51" y2="21" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="23" y1="42" x2="51" y2="35" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="61" y1="21" x2="89" y2="28" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="61" y1="35" x2="89" y2="28" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <polyline points="99,28 110,28 110,14 120,14" stroke="currentColor" stroke-width="0.8" opacity="0.14" fill="none"/>
-            <polyline points="99,28 110,28 110,42 120,42" stroke="currentColor" stroke-width="0.8" opacity="0.14" fill="none"/>
-          </svg>
-        </div>
-        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">Signal Processing & ML</h3>
-        <p class="text-xs text-base-content/45 leading-relaxed">RF signal processing, learning-based demodulation, SATCOM system modelling.</p>
+        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">Verification & Physical Design</h3>
+        <p class="text-xs text-base-content/45 leading-relaxed">AMBA UVM frameworks, RTL-to-GDSII flows, timing closure, DRC/LVS in Cadence toolchain.</p>
       </div>
 
     </div>
   </section>
 
-  <!-- ── Journey (timeline) ────────────────────────────────────── -->
+  <!-- ── Journey (animated timeline) ─────────────────────────── -->
   
-  <section class="pb-10 border-t border-base-200/60 pt-8">
-    <div class="eyebrow mb-5">Journey</div>
-    <div class="pl-4 timeline-track space-y-8">
-      
-      <div class="relative pl-6">
-        <div class="absolute -left-[5px] top-[6px] w-2.5 h-2.5 rounded-full bg-primary border-2 border-base-100"></div>
-        <div class="font-mono text-xs text-base-content/40 uppercase tracking-wider mb-1">Jan 2026</div>
-        <p class="text-sm text-base-content/75 leading-relaxed">
-          Joined InCore Semiconductors as a NoC Verification Intern, working on AMBA AHB/APB verification using Embedded UVM in D.
-          
-        </p>
+  <section class="pb-16 border-t border-base-200/60 pt-8 relative" id="timeline-section-wrapper">
+    <div class="eyebrow mb-10">Journey</div>
+
+    <div class="relative" id="timeline-section">
+
+      <!-- Safelist hidden div so Tailwind includes dynamic color classes -->
+      <div class="hidden" aria-hidden="true">
+        <span class="border-green-500 text-green-500 border-blue-500 text-blue-500 border-orange-500 text-orange-500 border-purple-500 text-purple-500"></span>
       </div>
-      
-      <div class="relative pl-6">
-        <div class="absolute -left-[5px] top-[6px] w-2.5 h-2.5 rounded-full bg-primary border-2 border-base-100"></div>
-        <div class="font-mono text-xs text-base-content/40 uppercase tracking-wider mb-1">Nov 2024</div>
-        <p class="text-sm text-base-content/75 leading-relaxed">
-          CNR Rao Scholarship recipient — merit certificate and 40% tuition fee refund for ranking in the top 20 students by SGPA at PES University.
-          
-        </p>
+
+      <style>
+        #timeline-track { background: linear-gradient(to bottom, rgba(59,74,107,0.65), rgba(59,74,107,0.15), transparent); }
+        [data-theme="academic-dark"] #timeline-track { background: linear-gradient(to bottom, rgba(123,143,196,0.65), rgba(123,143,196,0.15), transparent); }
+        #timeline-mobile-track { background: linear-gradient(to bottom, rgba(59,74,107,0.45), transparent); }
+        [data-theme="academic-dark"] #timeline-mobile-track { background: linear-gradient(to bottom, rgba(123,143,196,0.45), transparent); }
+      </style>
+
+      <!-- Desktop center track line -->
+      <div id="timeline-track"
+           class="absolute top-32 bottom-8 z-[5] hidden md:block"
+           style="left:50%; width:2px; transform:translateX(-50%);">
       </div>
-      
-      <div class="relative pl-6">
-        <div class="absolute -left-[5px] top-[6px] w-2.5 h-2.5 rounded-full bg-primary border-2 border-base-100"></div>
-        <div class="font-mono text-xs text-base-content/40 uppercase tracking-wider mb-1">Nov 2024</div>
-        <p class="text-sm text-base-content/75 leading-relaxed">
-          Started Dynamic Partial Reconfiguration project at CHIPS PES University — run-time adaptive reconfiguration of a RISC-V co-processor using Xilinx Vivado DFX.
-          
-        </p>
+
+      <!-- Mobile left track line -->
+      <div id="timeline-mobile-track" class="absolute top-32 bottom-8 md:hidden"
+           style="left:1.25rem; width:2px;">
       </div>
-      
+
+      <!-- Scrolling orb (desktop) -->
+      <div id="timeline-orb"
+           class="absolute z-20 pointer-events-none hidden md:block"
+           style="left:50%; top:8rem; opacity:0; transform:translate(-50%,0); will-change:transform;">
+        <div class="w-5 h-5 rounded-full -translate-x-1/2 -translate-y-1/2 bg-primary"
+             style="box-shadow:0 0 14px 3px rgba(59,74,107,0.5);">
+        </div>
+      </div>
+
+      <!-- Heading -->
+      <div class="text-center mb-16">
+        <h2 class="font-heading font-bold text-2xl text-base-content mb-2">A Timeline Of My Journey</h2>
+        <p class="text-sm text-base-content/45 font-mono">Education, Experience, and Projects.</p>
+      </div>
+
+      <!-- Timeline entries -->
+      <div class="space-y-16">
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="green">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-right md:pr-12">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="green">
+                Aug 2022
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">Started BTech ECE at PES University</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pl-12 md:order-2">
+              
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Began Electronics and Communications Engineering at PES University, Bengaluru. Batch of 2026.</p>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="orange">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-left md:pl-12 md:order-2">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="orange">
+                Sep 2022
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">Club Lead — Team Vegavath Racing Club</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pr-12 md:order-1">
+              
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Joined and led the student motorsport racing team at PES University through December 2024.</p>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="orange">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-right md:pr-12">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="orange">
+                Jan 2023
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">Student Researcher, Quanad Lab</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pl-12 md:order-2">
+              
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Worked on fabrication of quantum dot doped Poly-Aniline (PANI) and Poly-ethylenedioxythiophene (PEDOT) nano-films.</p>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="blue">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-left md:pl-12 md:order-2">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="blue">
+                Nov 2023
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">AES Encryption/Decryption on PYNQ FPGA</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pr-12 md:order-1">
+              
+              <a href="https://github.com/Arun-66/Cryptographic_Accelerator"
+                 target="_blank" rel="noopener noreferrer"
+                 class="block bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 hover:border-primary/30 transition-all duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Hardware-software co-design of AES on PYNQ-Z2 — hardware-accelerated cipher datapath with software-based S-box and key generation over AXI.</p>
+                <span class="mt-2 text-xs text-primary flex items-center gap-1 font-mono">link →</span>
+              </a>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="orange">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-right md:pr-12">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="orange">
+                Jun 2024
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">Teaching Assistant — CHIPS PES University</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pl-12 md:order-2">
+              
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Conducted hands-on lab sessions on PYNQ FPGA development boards and Zynq SoC architecture, covering hardware-software co-design concepts.</p>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="blue">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-left md:pl-12 md:order-2">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="blue">
+                Jun 2024
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">PostgreSQL Acceleration on Alveo U50</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pr-12 md:order-1">
+              
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Designed a database accelerator for PostgreSQL workloads on the Xilinx Alveo U50 card using Vitis Libraries.</p>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="orange">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-right md:pr-12">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="orange">
+                Aug 2024
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">Teaching Assistant — Computer Aided Digital Design</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pl-12 md:order-2">
+              
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Assisted in RTL design, simulation, and FPGA implementation labs using Xilinx Vivado, under Prof. Vinay Reddy at PES University.</p>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="blue">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-left md:pl-12 md:order-2">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="blue">
+                Nov 2024
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">FIFO — RTL to GDSII</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pr-12 md:order-1">
+              
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Implemented a synchronous FIFO through the complete Cadence RTL-to-GDSII flow with SCL180 PDK — synthesis, P&R, timing closure, DRC/LVS.</p>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="blue">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-right md:pr-12">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="blue">
+                Nov 2024
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">Dynamic Partial Reconfiguration on FPGA</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pl-12 md:order-2">
+              
+              <a href="/projects/dpr-fpga/"
+                 
+                 class="block bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 hover:border-primary/30 transition-all duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Run-time adaptive reconfiguration of a RISC-V co-processor for resource optimisation using Xilinx Vivado DFX at CHIPS, PES University.</p>
+                <span class="mt-2 text-xs text-primary flex items-center gap-1 font-mono">link →</span>
+              </a>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="green">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-left md:pl-12 md:order-2">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="green">
+                Nov 2024
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">CNR Rao Scholarship</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pr-12 md:order-1">
+              
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Awarded merit certificate and 40% tuition fee refund for ranking in the top 20 students by SGPA at PES University.</p>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="purple">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-right md:pr-12">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="purple">
+                2024
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">Publication — Ag-PANI Nanocomposites</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pl-12 md:order-2">
+              
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Published research on silver-decorated polyaniline (Ag-PANI) nanocomposites enhanced with nanoclay for EMI shielding applications.</p>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="blue">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-left md:pl-12 md:order-2">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="blue">
+                Jun 2025
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">RISC-V SoC (RV32IM)</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pr-12 md:order-1">
+              
+              <a href="https://github.com/Arun-66/RISCV_SOC"
+                 target="_blank" rel="noopener noreferrer"
+                 class="block bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 hover:border-primary/30 transition-all duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Designed a full RV32IM core in Verilog with FPGA validation and SoC integration — UART and SPI peripherals. Ongoing development.</p>
+                <span class="mt-2 text-xs text-primary flex items-center gap-1 font-mono">link →</span>
+              </a>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="orange">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 md:text-right md:pr-12">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="orange">
+                Jan 2026
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">NoC Verification Intern — InCore Semiconductors</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="md:pl-12 md:order-2">
+              
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">Working on AMBA AHB/APB/AXI4 verification using Embedded UVM in D — rewriting golden reference models, scoreboards, sequences, and drivers for scalable, design-independent verification frameworks.</p>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+
     </div>
   </section>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var track = document.getElementById('timeline-track');
+    var orb   = document.getElementById('timeline-orb');
+    var markers = document.querySelectorAll('.timeline-marker');
+    var ticking = false;
+
+    var colorMap = {
+      green:   '#22c55e',
+      blue:    '#3b82f6',
+      orange:  '#f97316',
+      purple:  '#a855f7',
+      primary: null  // resolved below
+    };
+
+    // Resolve primary from CSS custom property
+    var root = document.documentElement;
+    var raw = getComputedStyle(root).getPropertyValue('--color-primary').trim();
+    colorMap.primary = raw || '#3B4A6B';
+
+    // Detect dark mode and adjust orb glow
+    function isDark() {
+      return root.getAttribute('data-theme') === 'academic-dark';
+    }
+
+    // Apply date badge colors
+    document.querySelectorAll('.timeline-date').forEach(function (el) {
+      var c = colorMap[el.dataset.color] || colorMap.primary;
+      if (c) { el.style.color = c; el.style.borderColor = c; }
+    });
+
+    function update() {
+      if (!track || !orb) return;
+      var trackRect = track.getBoundingClientRect();
+      var progress  = (window.innerHeight / 2) - trackRect.top;
+      var orbPos    = Math.max(0, Math.min(progress, trackRect.height));
+
+      orb.style.opacity   = progress > 0 ? '1' : '0';
+      orb.style.transform = 'translate(-50%, ' + orbPos + 'px)';
+
+      var orbRect   = orb.getBoundingClientRect();
+      var orbCenter = orbRect.top + orbRect.height / 2;
+
+      markers.forEach(function (marker) {
+        var mRect  = marker.getBoundingClientRect();
+        var mCent  = mRect.top + mRect.height / 2;
+        var color  = colorMap[marker.dataset.color] || colorMap.primary;
+
+        if (orbCenter >= mCent) {
+          marker.classList.add('scale-125');
+          marker.style.backgroundColor = color;
+          marker.style.borderColor     = color;
+          marker.style.boxShadow       = '0 0 10px ' + color;
+        } else {
+          marker.classList.remove('scale-125');
+          marker.style.backgroundColor = '';
+          marker.style.borderColor     = '';
+          marker.style.boxShadow       = '';
+        }
+      });
+
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    });
+
+    // Re-resolve primary when theme toggles
+    document.addEventListener('themechange', function () {
+      var r = getComputedStyle(root).getPropertyValue('--color-primary').trim();
+      colorMap.primary = r || '#3B4A6B';
+    });
+
+    update();
+  });
+  </script>
   
 
   <!-- ── Selected publications ────────────────────────────────── -->
