@@ -5,7 +5,6 @@ subtitle: "Digital design, hardware verification, and FPGA systems."
 position: NoC Verification Intern
 company: InCore Semiconductors
 location: Bengaluru, Karnataka
-profile_image: /assets/img/prof_pic.jpg
 social_links:
   - {name: Email, url: "mailto:arun.i.murugappan@gmail.com", icon: email}
   - {name: GitHub, url: "https://github.com/Arun-66", icon: github}
