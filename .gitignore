@@ -1,8 +1,8 @@
 # mettu build outputs
 dist/
 .cache/
-assets/css/generated.*.css
-assets/css/syntax.css
+# assets/css/generated.*.css  -- committed for GitHub Pages static serving
+# assets/css/syntax.css       -- committed for GitHub Pages static serving
 assets/images-processed/
 
 # Node
