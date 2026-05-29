@@ -2,68 +2,62 @@
 layout: projects
 title: Projects
 categories:
-  - name: "IC Design"
+  - name: "FPGA & SoC"
     entries:
-      - title: "Low Phase Noise Quadrature DCO"
-        description: "Dual superharmonic injection-locked quadrature DCO in 55nm CMOS for Ka-band LO synthesis. Published at APCCAS 2025."
-        tags: [Cadence Virtuoso, SpectreRF, 55nm CMOS, RF]
-        slug: "quadrature-dco"
+      - title: "RISC-V SoC (RV32IM)"
+        description: "Full RV32IM core in Verilog with FPGA validation and SoC integration — UART and SPI peripherals, ongoing development."
+        tags: [Verilog, SystemVerilog, FPGA, RISC-V, UART, SPI]
+        slug: "riscv-soc"
+        url: "https://github.com/Arun-66/RISCV_SOC"
 
-      - title: "VCO-Based ADC Architectures"
-        description: "Comparative design and analysis of LC-tank vs current-starved VCO-based ADCs. Published at NKCon 2025."
-        tags: [Cadence, Mixed-Signal, ADC, SpectreRF]
-        slug: "vco-adc"
+      - title: "Dynamic Partial Reconfiguration on FPGA"
+        description: "Run-time adaptive reconfiguration of a RISC-V processor's co-processor for resource optimisation using Xilinx Vivado DFX. Built at CHIPS, PES University."
+        tags: [Xilinx Vivado, DFX, RISC-V, Partial Reconfiguration, FPGA]
+        slug: "dpr-fpga"
 
-      - title: "6T SRAM Array"
-        description: "6T SRAM cell and array in SkyWater SKY130A PDK, achieving a 5% improvement in read/write stability margins."
-        tags: [Cadence Virtuoso, SkyWater SKY130A, SRAM, Layout]
-        slug: "sram-array"
+      - title: "AES Encryption/Decryption on PYNQ FPGA"
+        description: "Hardware-software co-design of AES encryption/decryption on PYNQ-Z2: hardware-accelerated datapath with software-based S-box and key generation."
+        tags: [PYNQ-Z2, AES, Verilog, HLS, Hardware-Software Co-design]
+        slug: "aes-pynq"
+        url: "https://github.com/Arun-66/Cryptographic_Accelerator"
 
-      - title: "4-bit Flash ADC"
-        description: "Flash ADC architecture using a Wallace Tree encoder for high-speed thermometer-to-binary conversion."
-        tags: [ADC, Wallace Tree, Cadence Virtuoso]
-        slug: "flash-adc"
-
-  - name: "Digital Design"
+  - name: "Physical Design"
     entries:
-      - title: "Embedded SoC Design (RV32IM)"
-        description: "RISC-V SoC with UART, SPI, and QSPI interfaces validated on FPGA using the SkyWater SKY130A PDK."
-        tags: [SystemVerilog, C, Cadence, RISC-V, SKY130A]
-        slug: "embedded-soc"
+      - title: "FIFO — RTL to GDSII"
+        description: "Complete RTL-to-GDSII flow for a synchronous FIFO using the Cadence toolchain with SCL180 PDK — synthesis, floorplanning, P&R, timing closure, DRC/LVS."
+        tags: [Cadence Genus, Cadence Innovus, SCL180 PDK, GDSII, Physical Design]
+        slug: "fifo-gdsii"
 
-      - title: "8-bit RISC-V CPU for IoT"
-        description: "Energy-efficient 8-bit RISC-V CPU for low-power IoT applications, tapeout-ready for Tiny Tapeout 9."
-        tags: [SystemVerilog, C, Assembly, RISC-V, Tapeout]
-        slug: "risc-v-cpu-iot"
+      - title: "Digital VLSI Design"
+        description: "Implementation of standard digital cells and circuits using Cadence Virtuoso, covering layout, DRC, and LVS verification."
+        tags: [Cadence Virtuoso, VLSI, Layout, DRC, LVS]
+        slug: "digital-vlsi"
+        url: "https://github.com/Arun-66/Digital_VLSI_Design_Cadence"
 
-      - title: "Layered Testbench — 4-bit Shift Register"
-        description: "Structured SystemVerilog verification environment with generator, driver, monitor, interface, and scoreboard layers."
-        tags: [SystemVerilog, Verification, UVM-style]
-        slug: "layered-testbench"
-
-      - title: "Flexible CLA Adder"
-        description: "Modular 4-bit Carry-Look Ahead Adder blocks with scalable architecture for timing and area optimisation."
-        tags: [SystemVerilog, CLA, RTL, Arithmetic]
-        slug: "flex-cla"
-
-      - title: "Single-Cycle RISC-V Processor"
-        description: "Single-cycle RISC-V RV32I processor in Verilog, built and validated for the Computer Organization TA role."
-        tags: [Verilog, RISC-V, RIPES, Vivado]
-        slug: "risc-v-processor"
-
-  - name: "Software & ML"
+  - name: "Hardware Acceleration & HPC"
     entries:
-      - title: "YOLOv8 Hardware Accelerator"
-        description: "Investigating algorithmic compression and posit-based approximate computing for hardware acceleration of YOLOv8 inference."
-        tags: [Python, Posit, Approximate Computing, FPGA]
+      - title: "PostgreSQL Acceleration on Alveo U50"
+        description: "Database accelerator for PostgreSQL workloads on the Xilinx Alveo U50 card using Vitis Libraries."
+        tags: [Vitis, HLS, Alveo U50, HPC, Database Acceleration]
+        slug: "postgres-alveo"
 
-      - title: "FMU-NET: Semantic Segmentation for Person ID"
-        description: "Novel semantic segmentation architecture for person identification. Published at EASCT 2023."
-        tags: [PyTorch, Computer Vision, Segmentation]
-        slug: "fmu-net"
+      - title: "LeNet-5 FPGA Implementation"
+        description: "FPGA implementation of the LeNet-5 convolutional neural network for hardware-accelerated image classification."
+        tags: [FPGA, CNN, LeNet-5, Verilog, HLS]
+        slug: "lenet5"
+        url: "https://github.com/Arun-66/LENET_5"
 
-      - title: "ATM Management System"
-        description: "Python ATM simulator with facial recognition as the authentication layer, using OpenCV, Tkinter, and MySQL."
-        tags: [Python, OpenCV, MySQL, Biometrics]
-        slug: "atm-management"
+  - name: "Tools & Software"
+    entries:
+      - title: "Arix Assembler"
+        description: "Python-based assembler that converts assembly programs to disassembled hex code loadable into instruction memory."
+        tags: [Python, Assembly, ISA, Toolchain]
+        slug: "arix-assembler"
+        url: "https://github.com/Arun-66/Arix_Assembler"
+
+      - title: "QFT Adder"
+        description: "Quantum Fourier Transform-based adder implementation, exploring quantum computing approaches to arithmetic circuits."
+        tags: [Quantum Computing, QFT, Python]
+        slug: "qft-adder"
+        url: "https://github.com/Arun-66/QFT_Adder"
 ---

@@ -1,7 +1,7 @@
-site_name: "Devesh Bhaskaran"
-author: "Devesh Bhaskaran"
-base_url: "https://devesh-b.github.io"
-description: "Digital Design Engineer at Analog Devices India — working at the boundary where digital, analog, and RF have to learn to live together."
+site_name: "Arun Murugappan I"
+author: "Arun Murugappan I"
+base_url: "https://Arun-66.github.io"
+description: "Electronics and Communications Engineering student at PES University — digital design, hardware verification, and FPGA systems."
 
 theme:
   default: "academic-light"
@@ -103,7 +103,5 @@ navigation:
     url: "/projects/"
   - name: "Teaching"
     url: "/teaching/"
-  - name: "Blog"
-    url: "/blog/"
   - name: "Collaborate"
     url: "/collaborate/"
