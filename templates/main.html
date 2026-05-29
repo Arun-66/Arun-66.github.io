@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="max-w-4xl mx-auto px-6">
+
+  <!-- ── Hero ─────────────────────────────────────────────────── -->
+  <section class="py-16 md:py-20">
+    <div class="flex flex-col-reverse md:flex-row md:items-start md:justify-between gap-10">
+
+      <!-- Text block -->
+      <div class="flex-1 max-w-xl">
+        <h1 class="font-heading font-semibold text-3xl md:text-4xl tracking-tight text-base-content leading-tight">
+          {{ page.title }}
+        </h1>
+        <p class="mt-3 text-base-content/60 text-base leading-relaxed max-w-md">
+          {{ page.subtitle }}
+        </p>
+        <div class="mt-2 font-mono text-xs text-base-content/40 tracking-wide">
+          {{ page.position }} · {{ page.company }} · {{ page.location }}
+        </div>
+
+        <!-- Social links -->
+        <div class="flex items-center gap-3 mt-5">
+          {% for link in page.social_links %}
+          <a href="{{ link.url }}"
+             {% if 'mailto' not in link.url %}target="_blank" rel="noopener noreferrer"{% endif %}
+             title="{{ link.name }}"
+             class="text-base-content/40 hover:text-primary transition-colors">
+            {% include 'icons/' + link.icon + '.html' %}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Profile photo -->
+      {% if page.profile_image %}
+      <div class="flex-shrink-0">
+        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden ring-1 ring-base-300">
+          <img src="{{ page.profile_image }}" alt="{{ page.title }}"
+               class="w-full h-full object-cover object-center" loading="eager">
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- ── About ─────────────────────────────────────────────────── -->
+  <section class="pb-16 border-t border-base-200 pt-12">
+    <div class="eyebrow mb-5">About</div>
+    <div class="prose prose-sm md:prose-base max-w-none leading-relaxed
+                prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+                dark:prose-invert">
+      {{ content }}
+    </div>
+  </section>
+
+  <!-- ── Journey (timeline) ────────────────────────────────────── -->
+  {% if page.news %}
+  <section class="pb-16 border-t border-base-200 pt-12">
+    <div class="eyebrow mb-8">Journey</div>
+    <div class="pl-4 timeline-track space-y-8">
+      {% for item in page.news %}
+      <div class="relative pl-6">
+        <div class="absolute -left-[5px] top-[6px] w-2.5 h-2.5 rounded-full bg-primary border-2 border-base-100"></div>
+        <div class="font-mono text-xs text-base-content/40 uppercase tracking-wider mb-1">{{ item.date }}</div>
+        <p class="text-sm text-base-content/75 leading-relaxed">
+          {{ item.text }}
+          {% if item.links %}
+          —
+          {% for lnk in item.links %}
+          <a href="{{ lnk.url }}" target="_blank" rel="noopener"
+             class="text-primary hover:underline">{{ lnk.text }}</a>{% if not loop.last %},{% endif %}
+          {% endfor %}
+          {% endif %}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- ── Selected publications ────────────────────────────────── -->
+  {% if page.featured_pubs %}
+  <section class="pb-16 border-t border-base-200 pt-12">
+    <div class="eyebrow mb-8">Selected Work</div>
+    <div class="space-y-4">
+      {% for pub in page.featured_pubs %}
+      <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener"
+         class="card-glow block border border-base-200 rounded-lg p-5 hover:border-primary/30 transition-colors group">
+        <div class="flex items-start gap-3">
+          <span class="pub-abbr text-primary/70 mt-0.5 flex-shrink-0">{{ pub.abbr }}</span>
+          <div class="min-w-0">
+            <p class="text-sm font-medium text-base-content leading-snug group-hover:text-primary transition-colors">
+              {{ pub.title }}
+            </p>
+            <div class="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-mono text-base-content/40">
+              <span>{{ pub.venue }}</span>
+              <span class="hidden sm:inline">·</span>
+              <span>{{ pub.coauthors }}</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="mt-5">
+      <a href="/publications/" class="text-xs font-mono text-primary/70 hover:text-primary transition-colors">
+        view all publications →
+      </a>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- ── Latest blog post ──────────────────────────────────────── -->
+  {% if posts %}
+  <section class="pb-16 border-t border-base-200 pt-12">
+    <div class="eyebrow mb-8">From the Blog</div>
+    {% set latest = posts[0] %}
+    <a href="{{ latest.url }}/"
+       class="card-glow block border border-base-200 rounded-lg p-5 hover:border-primary/30 transition-colors group">
+      <div class="font-mono text-xs text-base-content/35 mb-2">{{ latest.date }}</div>
+      <h3 class="font-heading font-medium text-base text-base-content group-hover:text-primary transition-colors leading-snug">
+        {{ latest.title }}
+      </h3>
+      {% if latest.description %}
+      <p class="mt-2 text-sm text-base-content/55 leading-relaxed line-clamp-2">{{ latest.description }}</p>
+      {% endif %}
+    </a>
+    <div class="mt-5">
+      <a href="/blog/" class="text-xs font-mono text-primary/70 hover:text-primary transition-colors">
+        browse all posts →
+      </a>
+    </div>
+  </section>
+  {% endif %}
+
+</div>
+
+{% endblock %}
