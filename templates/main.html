@@ -60,7 +60,7 @@
     <div class="eyebrow mb-5">Research Interests</div>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
-      <!-- Analog & RF IC Design -->
+      <!-- Processor & SoC Design -->
       <div class="group border border-base-200/60 rounded-xl p-5 hover:border-primary/25 transition-colors">
         <div class="w-full h-14 mb-4 text-primary overflow-hidden">
           <svg viewBox="0 0 120 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
@@ -77,85 +77,229 @@
             <line x1="34" y1="34" x2="27" y2="34" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
             <line x1="86" y1="22" x2="93" y2="22" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
             <line x1="86" y1="34" x2="93" y2="34" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
-            <line x1="44" y1="28" x2="76" y2="28" stroke="currentColor" stroke-width="0.8" opacity="0.18"/>
-            <line x1="60" y1="14" x2="60" y2="42" stroke="currentColor" stroke-width="0.8" opacity="0.18"/>
-            <circle cx="39" cy="15" r="2" fill="currentColor" opacity="0.30"/>
-            <polyline points="27,22 18,22 18,50 8,50" stroke="currentColor" stroke-width="0.8" opacity="0.15" fill="none"/>
-            <polyline points="93,34 102,34 102,6 112,6" stroke="currentColor" stroke-width="0.8" opacity="0.15" fill="none"/>
+            <text x="48" y="32" font-size="9" fill="currentColor" opacity="0.55" font-family="monospace">RV32IM</text>
           </svg>
         </div>
-        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">Analog & RF IC Design</h3>
-        <p class="text-xs text-base-content/45 leading-relaxed">Oscillator design, VCO-based ADCs, Ka-band circuits in sub-100nm CMOS nodes.</p>
+        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">Processor & SoC Design</h3>
+        <p class="text-xs text-base-content/45 leading-relaxed">RISC-V cores, microarchitecture trade-offs, SoC integration with peripheral interfaces.</p>
       </div>
 
-      <!-- Digital SoC & RTL -->
+      <!-- FPGA & ML Acceleration -->
       <div class="group border border-base-200/60 rounded-xl p-5 hover:border-primary/25 transition-colors">
         <div class="w-full h-14 mb-4 text-primary overflow-hidden">
           <svg viewBox="0 0 120 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
-            <polyline points="4,16 14,16 14,6 26,6 26,16 38,16 38,6 50,6 50,16 62,16 62,6 74,6 74,16 86,16 86,6 98,6 98,16 112,16"
+            <rect x="8"  y="8"  width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="28" y="8"  width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="48" y="8"  width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="68" y="8"  width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="88" y="8"  width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="8"  y="28" width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.25"/>
+            <rect x="28" y="28" width="14" height="14" rx="1" fill="currentColor" opacity="0.18" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="48" y="28" width="14" height="14" rx="1" fill="currentColor" opacity="0.18" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <rect x="68" y="28" width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.25"/>
+            <rect x="88" y="28" width="14" height="14" rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.25"/>
+            <rect x="8"  y="42" width="14" height="6"  rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.18"/>
+            <rect x="28" y="42" width="74" height="6"  rx="1" stroke="currentColor" stroke-width="1.2" opacity="0.18"/>
+          </svg>
+        </div>
+        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">FPGA & ML Acceleration</h3>
+        <p class="text-xs text-base-content/45 leading-relaxed">AlexNet, LeNet-5 on FPGA via HLS, hardware-software co-design on Xilinx platforms.</p>
+      </div>
+
+      <!-- Hardware Verification & Physical Design -->
+      <div class="group border border-base-200/60 rounded-xl p-5 hover:border-primary/25 transition-colors">
+        <div class="w-full h-14 mb-4 text-primary overflow-hidden">
+          <svg viewBox="0 0 120 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
+            <polyline points="4,28 18,28 18,16 30,16 30,28 42,28 42,40 54,40 54,28 66,28 66,16 78,16 78,28 90,28 90,40 102,40 102,28 116,28"
                       stroke="currentColor" stroke-width="1.4" opacity="0.38" fill="none"/>
-            <polyline points="4,32 18,32 18,24 46,24 46,32 72,32 72,24 98,24 98,32 112,32"
-                      stroke="currentColor" stroke-width="1.4" opacity="0.25" fill="none"/>
-            <polyline points="4,48 22,48 22,40 42,40 42,48 64,48 64,40 84,40 84,48 112,48"
-                      stroke="currentColor" stroke-width="1.4" opacity="0.16" fill="none"/>
+            <line x1="4" y1="44" x2="116" y2="44" stroke="currentColor" stroke-width="0.8" opacity="0.15"/>
+            <circle cx="30" cy="16" r="2.5" fill="currentColor" opacity="0.45"/>
+            <circle cx="66" cy="16" r="2.5" fill="currentColor" opacity="0.45"/>
+            <circle cx="42" cy="40" r="2.5" stroke="currentColor" stroke-width="1" opacity="0.30"/>
+            <circle cx="90" cy="40" r="2.5" stroke="currentColor" stroke-width="1" opacity="0.30"/>
           </svg>
         </div>
-        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">Digital SoC & RTL Design</h3>
-        <p class="text-xs text-base-content/45 leading-relaxed">RISC-V processors, embedded SoC architectures, SystemVerilog verification.</p>
-      </div>
-
-      <!-- Signal Processing & Systems -->
-      <div class="group border border-base-200/60 rounded-xl p-5 hover:border-primary/25 transition-colors">
-        <div class="w-full h-14 mb-4 text-primary overflow-hidden">
-          <svg viewBox="0 0 120 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
-            <circle cx="18" cy="14" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
-            <circle cx="18" cy="28" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
-            <circle cx="18" cy="42" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
-            <circle cx="56" cy="21" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.28"/>
-            <circle cx="56" cy="35" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.28"/>
-            <circle cx="94" cy="28" r="5" stroke="currentColor" stroke-width="1.4" opacity="0.38"/>
-            <line x1="23" y1="14" x2="51" y2="21" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="23" y1="14" x2="51" y2="35" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="23" y1="28" x2="51" y2="21" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="23" y1="28" x2="51" y2="35" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="23" y1="42" x2="51" y2="21" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="23" y1="42" x2="51" y2="35" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="61" y1="21" x2="89" y2="28" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <line x1="61" y1="35" x2="89" y2="28" stroke="currentColor" stroke-width="0.75" opacity="0.16"/>
-            <polyline points="99,28 110,28 110,14 120,14" stroke="currentColor" stroke-width="0.8" opacity="0.14" fill="none"/>
-            <polyline points="99,28 110,28 110,42 120,42" stroke="currentColor" stroke-width="0.8" opacity="0.14" fill="none"/>
-          </svg>
-        </div>
-        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">Signal Processing & ML</h3>
-        <p class="text-xs text-base-content/45 leading-relaxed">RF signal processing, learning-based demodulation, SATCOM system modelling.</p>
+        <h3 class="font-heading font-semibold text-sm text-base-content mb-1">Verification & Physical Design</h3>
+        <p class="text-xs text-base-content/45 leading-relaxed">AMBA UVM frameworks, RTL-to-GDSII flows, timing closure, DRC/LVS in Cadence toolchain.</p>
       </div>
 
     </div>
   </section>
 
-  <!-- ── Journey (timeline) ────────────────────────────────────── -->
-  {% if page.news %}
-  <section class="pb-10 border-t border-base-200/60 pt-8">
-    <div class="eyebrow mb-5">Journey</div>
-    <div class="pl-4 timeline-track space-y-8">
-      {% for item in page.news %}
-      <div class="relative pl-6">
-        <div class="absolute -left-[5px] top-[6px] w-2.5 h-2.5 rounded-full bg-primary border-2 border-base-100"></div>
-        <div class="font-mono text-xs text-base-content/40 uppercase tracking-wider mb-1">{{ item.date }}</div>
-        <p class="text-sm text-base-content/75 leading-relaxed">
-          {{ item.text }}
-          {% if item.links %}
-          —
-          {% for lnk in item.links %}
-          <a href="{{ lnk.url }}" target="_blank" rel="noopener"
-             class="text-primary hover:underline">{{ lnk.text }}</a>{% if not loop.last %},{% endif %}
-          {% endfor %}
-          {% endif %}
-        </p>
+  <!-- ── Journey (animated timeline) ─────────────────────────── -->
+  {% if page.timeline %}
+  <section class="pb-16 border-t border-base-200/60 pt-8 relative" id="timeline-section-wrapper">
+    <div class="eyebrow mb-10">Journey</div>
+
+    <div class="relative" id="timeline-section">
+
+      <!-- Safelist hidden div so Tailwind includes dynamic color classes -->
+      <div class="hidden" aria-hidden="true">
+        <span class="border-green-500 text-green-500 border-blue-500 text-blue-500 border-orange-500 text-orange-500 border-purple-500 text-purple-500"></span>
       </div>
-      {% endfor %}
+
+      <style>
+        #timeline-track { background: linear-gradient(to bottom, rgba(59,74,107,0.65), rgba(59,74,107,0.15), transparent); }
+        [data-theme="academic-dark"] #timeline-track { background: linear-gradient(to bottom, rgba(123,143,196,0.65), rgba(123,143,196,0.15), transparent); }
+        #timeline-mobile-track { background: linear-gradient(to bottom, rgba(59,74,107,0.45), transparent); }
+        [data-theme="academic-dark"] #timeline-mobile-track { background: linear-gradient(to bottom, rgba(123,143,196,0.45), transparent); }
+      </style>
+
+      <!-- Desktop center track line -->
+      <div id="timeline-track"
+           class="absolute top-32 bottom-8 z-[5] hidden md:block"
+           style="left:50%; width:2px; transform:translateX(-50%);">
+      </div>
+
+      <!-- Mobile left track line -->
+      <div id="timeline-mobile-track" class="absolute top-32 bottom-8 md:hidden"
+           style="left:1.25rem; width:2px;">
+      </div>
+
+      <!-- Scrolling orb (desktop) -->
+      <div id="timeline-orb"
+           class="absolute z-20 pointer-events-none hidden md:block"
+           style="left:50%; top:8rem; opacity:0; transform:translate(-50%,0); will-change:transform;">
+        <div class="w-5 h-5 rounded-full -translate-x-1/2 -translate-y-1/2 bg-primary"
+             style="box-shadow:0 0 14px 3px rgba(59,74,107,0.5);">
+        </div>
+      </div>
+
+      <!-- Heading -->
+      <div class="text-center mb-16">
+        <h2 class="font-heading font-bold text-2xl text-base-content mb-2">A Timeline Of My Journey</h2>
+        <p class="text-sm text-base-content/45 font-mono">Education, Experience, and Projects.</p>
+      </div>
+
+      <!-- Timeline entries -->
+      <div class="space-y-16">
+        {% for item in page.timeline %}
+        {% set is_even = loop.index % 2 == 0 %}
+        <div class="timeline-station relative pl-10 md:pl-0">
+
+          <!-- Desktop dot marker (centered on line) -->
+          <div class="timeline-marker absolute hidden md:block w-4 h-4 rounded-full border-2 border-base-200 bg-base-100 z-30 transition-all duration-300"
+               style="left:50%; top:1.75rem; transform:translateX(-50%);"
+               data-color="{{ item.color | default('primary') }}">
+          </div>
+
+          <!-- Mobile dot marker (on left rail) -->
+          <div class="absolute md:hidden w-3 h-3 rounded-full border-2 border-primary bg-base-100"
+               style="left:1.25rem; top:1.5rem; transform:translateX(-50%);">
+          </div>
+
+          <div class="grid md:grid-cols-2 md:gap-12 gap-4 items-start">
+
+            <!-- Date + Title -->
+            <div class="pt-2 {% if not is_even %}md:text-right md:pr-12{% else %}md:text-left md:pl-12 md:order-2{% endif %}">
+              <span class="timeline-date inline-block px-3 py-1 rounded-full border text-xs font-mono mb-2"
+                    data-color="{{ item.color | default('primary') }}">
+                {{ item.date }}
+              </span>
+              <h3 class="font-heading font-semibold text-base text-base-content leading-snug">{{ item.title }}</h3>
+            </div>
+
+            <!-- Card -->
+            <div class="{% if not is_even %}md:pl-12 md:order-2{% else %}md:pr-12 md:order-1{% endif %}">
+              {% if item.url %}
+              <a href="{{ item.url }}"
+                 {% if item.url.startswith('http') %}target="_blank" rel="noopener noreferrer"{% endif %}
+                 class="block bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 hover:border-primary/30 transition-all duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">{{ item.description }}</p>
+                <span class="mt-2 text-xs text-primary flex items-center gap-1 font-mono">link →</span>
+              </a>
+              {% else %}
+              <div class="bg-base-200/50 border border-base-200/80 p-5 rounded-xl hover:bg-base-200 transition-colors duration-300">
+                <p class="text-sm text-base-content/65 leading-relaxed">{{ item.description }}</p>
+              </div>
+              {% endif %}
+            </div>
+
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
     </div>
   </section>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var track = document.getElementById('timeline-track');
+    var orb   = document.getElementById('timeline-orb');
+    var markers = document.querySelectorAll('.timeline-marker');
+    var ticking = false;
+
+    var colorMap = {
+      green:   '#22c55e',
+      blue:    '#3b82f6',
+      orange:  '#f97316',
+      purple:  '#a855f7',
+      primary: null  // resolved below
+    };
+
+    // Resolve primary from CSS custom property
+    var root = document.documentElement;
+    var raw = getComputedStyle(root).getPropertyValue('--color-primary').trim();
+    colorMap.primary = raw || '#3B4A6B';
+
+    // Detect dark mode and adjust orb glow
+    function isDark() {
+      return root.getAttribute('data-theme') === 'academic-dark';
+    }
+
+    // Apply date badge colors
+    document.querySelectorAll('.timeline-date').forEach(function (el) {
+      var c = colorMap[el.dataset.color] || colorMap.primary;
+      if (c) { el.style.color = c; el.style.borderColor = c; }
+    });
+
+    function update() {
+      if (!track || !orb) return;
+      var trackRect = track.getBoundingClientRect();
+      var progress  = (window.innerHeight / 2) - trackRect.top;
+      var orbPos    = Math.max(0, Math.min(progress, trackRect.height));
+
+      orb.style.opacity   = progress > 0 ? '1' : '0';
+      orb.style.transform = 'translate(-50%, ' + orbPos + 'px)';
+
+      var orbRect   = orb.getBoundingClientRect();
+      var orbCenter = orbRect.top + orbRect.height / 2;
+
+      markers.forEach(function (marker) {
+        var mRect  = marker.getBoundingClientRect();
+        var mCent  = mRect.top + mRect.height / 2;
+        var color  = colorMap[marker.dataset.color] || colorMap.primary;
+
+        if (orbCenter >= mCent) {
+          marker.classList.add('scale-125');
+          marker.style.backgroundColor = color;
+          marker.style.borderColor     = color;
+          marker.style.boxShadow       = '0 0 10px ' + color;
+        } else {
+          marker.classList.remove('scale-125');
+          marker.style.backgroundColor = '';
+          marker.style.borderColor     = '';
+          marker.style.boxShadow       = '';
+        }
+      });
+
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    });
+
+    // Re-resolve primary when theme toggles
+    document.addEventListener('themechange', function () {
+      var r = getComputedStyle(root).getPropertyValue('--color-primary').trim();
+      colorMap.primary = r || '#3B4A6B';
+    });
+
+    update();
+  });
+  </script>
   {% endif %}
 
   <!-- ── Selected publications ────────────────────────────────── -->
