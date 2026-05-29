@@ -14,24 +14,45 @@ categories:
         tags: [Cadence, Mixed-Signal, ADC, SpectreRF]
         slug: "vco-adc"
 
+      - title: "6T SRAM Array"
+        description: "6T SRAM cell and array in SkyWater SKY130A PDK, achieving a 5% improvement in read/write stability margins."
+        tags: [Cadence Virtuoso, SkyWater SKY130A, SRAM, Layout]
+        slug: "sram-array"
+
       - title: "4-bit Flash ADC"
         description: "Flash ADC architecture using a Wallace Tree encoder for high-speed thermometer-to-binary conversion."
-        tags: [ADC, Wallace Tree, Mixed-Signal]
+        tags: [ADC, Wallace Tree, Cadence Virtuoso]
         slug: "flash-adc"
 
       - title: "Tiny Tapeout — Chipalooza"
         description: "Custom ICs submitted to Efabless Chipalooza open shuttle. Received $300 Tiny Tapeout Award (2024)."
-        tags: [OpenLane, GDS, Efabless, Digital]
+        tags: [OpenLane, GDS, Efabless, Analog]
         slug: "tiny-tapeout"
 
   - name: "Digital Design"
     entries:
-      - title: "Functionally Safe SPI Module"
-        description: "SPI peripheral with configurable CPOL/CPHA, error detection, and ISO 26262 safety mechanisms."
-        tags: [SystemVerilog, SPI, Functional Safety]
+      - title: "Embedded SoC Design (RV32IM)"
+        description: "RISC-V SoC with UART, SPI, and QSPI interfaces validated on FPGA using the SkyWater SKY130A PDK."
+        tags: [SystemVerilog, C, Cadence, RISC-V, SKY130A]
+        slug: "embedded-soc"
+
+      - title: "8-bit RISC-V CPU for IoT"
+        description: "Energy-efficient 8-bit RISC-V CPU for low-power IoT applications, tapeout-ready for Tiny Tapeout 9."
+        tags: [SystemVerilog, C, Assembly, RISC-V, Tapeout]
+        slug: "risc-v-cpu-iot"
+
+      - title: "Layered Testbench — 4-bit Shift Register"
+        description: "Structured SystemVerilog verification environment with generator, driver, monitor, interface, and scoreboard layers."
+        tags: [SystemVerilog, Verification, UVM-style]
+        slug: "layered-testbench"
+
+      - title: "Flexible CLA Adder"
+        description: "Modular 4-bit Carry-Look Ahead Adder blocks with scalable architecture for timing and area optimisation."
+        tags: [SystemVerilog, CLA, RTL, Arithmetic]
+        slug: "flex-cla"
 
       - title: "Single-Cycle RISC-V Processor"
-        description: "Single-cycle RISC-V RV32I processor implemented in Verilog, built and validated for the Computer Organization TA role."
+        description: "Single-cycle RISC-V RV32I processor in Verilog, built and validated for the Computer Organization TA role."
         tags: [Verilog, RISC-V, RIPES, Vivado]
         slug: "risc-v-processor"
 
@@ -45,4 +66,9 @@ categories:
         description: "Novel semantic segmentation architecture for person identification. Published at EASCT 2023."
         tags: [PyTorch, Computer Vision, Segmentation]
         slug: "fmu-net"
+
+      - title: "ATM Management System"
+        description: "Python ATM simulator with facial recognition as the authentication layer, using OpenCV, Tkinter, and MySQL."
+        tags: [Python, OpenCV, MySQL, Biometrics]
+        slug: "atm-management"
 ---
