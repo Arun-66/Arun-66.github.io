@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120">
+  <!-- Stage 6: Engineer doing RTL/Physical Design (Cadence) -->
+  <!-- Head -->
+  <circle cx="40" cy="20" r="13" fill="#FDBCB4" stroke="#333" stroke-width="1.5"/>
+  <!-- Hair (slightly messy from long hours) -->
+  <path d="M27 16 Q40 5 53 16 Q54 10 40 8 Q26 10 27 16Z" fill="#1A0A00"/>
+  <path d="M27 14 Q25 12 26 10" stroke="#1A0A00" stroke-width="2" fill="none"/>
+  <!-- Eyes (focused, glasses) -->
+  <circle cx="35" cy="19" r="2" fill="#333"/>
+  <circle cx="45" cy="19" r="2" fill="#333"/>
+  <!-- Glasses -->
+  <rect x="31" y="16" width="8" height="6" rx="2" fill="none" stroke="#555" stroke-width="0.8"/>
+  <rect x="41" y="16" width="8" height="6" rx="2" fill="none" stroke="#555" stroke-width="0.8"/>
+  <line x1="39" y1="19" x2="41" y2="19" stroke="#555" stroke-width="0.8"/>
+  <!-- Focused expression -->
+  <path d="M36 25 Q40 27 44 25" stroke="#333" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <!-- Neck -->
+  <rect x="37" y="32" width="6" height="5" rx="1" fill="#FDBCB4"/>
+  <!-- Body (smart shirt) -->
+  <rect x="27" y="36" width="26" height="23" rx="3" fill="#4A5568" stroke="#333" stroke-width="1"/>
+  <path d="M37 36 L40 42 L43 36" fill="#F0F0F0" stroke="#ccc" stroke-width="0.5"/>
+  <!-- Pants -->
+  <rect x="29" y="57" width="9" height="22" rx="2" fill="#2D3748" stroke="#333" stroke-width="1"/>
+  <rect x="42" y="57" width="9" height="22" rx="2" fill="#2D3748" stroke="#333" stroke-width="1"/>
+  <!-- Shoes -->
+  <ellipse cx="34" cy="80" rx="5" ry="3" fill="#1A1A1A"/>
+  <ellipse cx="46" cy="80" rx="5" ry="3" fill="#1A1A1A"/>
+  <!-- Arms at keyboard -->
+  <line x1="27" y1="43" x2="14" y2="60" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
+  <line x1="53" y1="43" x2="66" y2="60" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
+  <!-- Monitor with chip layout (Cadence Innovus style) -->
+  <rect x="3" y="52" width="24" height="16" rx="1" fill="#0D1117" stroke="#555" stroke-width="1"/>
+  <!-- GDS layout blocks -->
+  <rect x="5" y="54" width="5" height="3" fill="#FF6B35" opacity="0.8"/>
+  <rect x="11" y="54" width="3" height="6" fill="#4A90D9" opacity="0.8"/>
+  <rect x="15" y="54" width="4" height="3" fill="#7EC8A4" opacity="0.8"/>
+  <rect x="5" y="58" width="8" height="4" fill="#E8C547" opacity="0.8"/>
+  <rect x="20" y="56" width="5" height="5" fill="#FF6B35" opacity="0.6"/>
+  <text x="15" y="70" font-size="3" text-anchor="middle" fill="#888" font-family="monospace">GDSII</text>
+</svg>

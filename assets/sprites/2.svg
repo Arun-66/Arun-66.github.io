@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120">
+  <!-- Stage 2: University freshman with books -->
+  <!-- Head -->
+  <circle cx="40" cy="22" r="13" fill="#FDBCB4" stroke="#333" stroke-width="1.5"/>
+  <!-- Hair (slightly longer) -->
+  <path d="M27 18 Q40 7 53 18 Q53 11 40 9 Q27 11 27 18Z" fill="#1A0A00"/>
+  <!-- Eyes -->
+  <circle cx="35" cy="21" r="2" fill="#333"/>
+  <circle cx="45" cy="21" r="2" fill="#333"/>
+  <!-- Slight smile -->
+  <path d="M36 27 Q40 30 44 27" stroke="#333" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <!-- Neck -->
+  <rect x="37" y="34" width="6" height="5" rx="1" fill="#FDBCB4"/>
+  <!-- Body (casual tshirt) -->
+  <rect x="28" y="38" width="24" height="22" rx="3" fill="#5B8C5A" stroke="#333" stroke-width="1"/>
+  <!-- PES logo hint -->
+  <text x="40" y="51" font-size="5" text-anchor="middle" fill="white" font-family="monospace" font-weight="bold">PES</text>
+  <!-- Jeans -->
+  <rect x="29" y="58" width="9" height="22" rx="2" fill="#4169B0" stroke="#333" stroke-width="1"/>
+  <rect x="42" y="58" width="9" height="22" rx="2" fill="#4169B0" stroke="#333" stroke-width="1"/>
+  <!-- Shoes -->
+  <ellipse cx="34" cy="81" rx="5" ry="3" fill="#555"/>
+  <ellipse cx="46" cy="81" rx="5" ry="3" fill="#555"/>
+  <!-- Arms -->
+  <line x1="28" y1="42" x2="16" y2="54" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
+  <line x1="52" y1="42" x2="64" y2="56" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
+  <!-- Stack of books (left hand) -->
+  <rect x="6" y="52" width="12" height="4" rx="1" fill="#E8502A" stroke="#333" stroke-width="0.8"/>
+  <rect x="6" y="56" width="12" height="4" rx="1" fill="#4A7FCB" stroke="#333" stroke-width="0.8"/>
+  <rect x="6" y="60" width="12" height="4" rx="1" fill="#F5C518" stroke="#333" stroke-width="0.8"/>
+</svg>

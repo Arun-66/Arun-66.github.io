@@ -156,13 +156,18 @@
            style="left:1.25rem; width:2px;">
       </div>
 
-      <!-- Scrolling orb (desktop) -->
-      <div id="timeline-orb"
-           class="absolute z-20 pointer-events-none hidden md:block"
+      <!-- Scrolling character sprites (desktop) — first visible, rest hidden, JS crossfades -->
+      <div id="timeline-train"
+           class="absolute z-20 pointer-events-none hidden md:block transition-opacity duration-300"
            style="left:50%; top:8rem; opacity:0; transform:translate(-50%,0); will-change:transform;">
-        <div class="w-5 h-5 rounded-full -translate-x-1/2 -translate-y-1/2 bg-primary"
-             style="box-shadow:0 0 14px 3px rgba(59,74,107,0.5);">
-        </div>
+        <img src="/assets/sprites/1.svg" class="train-sprite relative left-1/2 -translate-x-1/2 transition-opacity duration-300" data-sprite-index="1" style="height:11vh;width:auto;opacity:1;" loading="eager"/>
+        <img src="/assets/sprites/2.svg" class="train-sprite absolute top-0 left-1/2 -translate-x-1/2 transition-opacity duration-300" data-sprite-index="2" style="height:11vh;width:auto;opacity:0;" loading="eager"/>
+        <img src="/assets/sprites/3.svg" class="train-sprite absolute top-0 left-1/2 -translate-x-1/2 transition-opacity duration-300" data-sprite-index="3" style="height:11vh;width:auto;opacity:0;" loading="eager"/>
+        <img src="/assets/sprites/4.svg" class="train-sprite absolute top-0 left-1/2 -translate-x-1/2 transition-opacity duration-300" data-sprite-index="4" style="height:11vh;width:auto;opacity:0;" loading="eager"/>
+        <img src="/assets/sprites/5.svg" class="train-sprite absolute top-0 left-1/2 -translate-x-1/2 transition-opacity duration-300" data-sprite-index="5" style="height:11vh;width:auto;opacity:0;" loading="eager"/>
+        <img src="/assets/sprites/6.svg" class="train-sprite absolute top-0 left-1/2 -translate-x-1/2 transition-opacity duration-300" data-sprite-index="6" style="height:11vh;width:auto;opacity:0;" loading="eager"/>
+        <img src="/assets/sprites/7.svg" class="train-sprite absolute top-0 left-1/2 -translate-x-1/2 transition-opacity duration-300" data-sprite-index="7" style="height:11vh;width:auto;opacity:0;" loading="eager"/>
+        <img src="/assets/sprites/8.svg" class="train-sprite absolute top-0 left-1/2 -translate-x-1/2 transition-opacity duration-300" data-sprite-index="8" style="height:11vh;width:auto;opacity:0;" loading="eager"/>
       </div>
 
       <!-- Heading -->
@@ -225,53 +230,61 @@
 
   <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var track = document.getElementById('timeline-track');
-    var orb   = document.getElementById('timeline-orb');
+    var track   = document.getElementById('timeline-track');
+    var train   = document.getElementById('timeline-train');
+    var sprites = document.querySelectorAll('.train-sprite');
     var markers = document.querySelectorAll('.timeline-marker');
+    var totalSprites = sprites.length;
+    var currentSprite = 1;
     var ticking = false;
 
     var colorMap = {
       green:   '#22c55e',
       blue:    '#3b82f6',
       orange:  '#f97316',
-      purple:  '#a855f7',
-      primary: null  // resolved below
+      purple:  '#a855f7'
     };
-
-    // Resolve primary from CSS custom property
-    var root = document.documentElement;
-    var raw = getComputedStyle(root).getPropertyValue('--color-primary').trim();
-    colorMap.primary = raw || '#3B4A6B';
-
-    // Detect dark mode and adjust orb glow
-    function isDark() {
-      return root.getAttribute('data-theme') === 'academic-dark';
-    }
 
     // Apply date badge colors
     document.querySelectorAll('.timeline-date').forEach(function (el) {
-      var c = colorMap[el.dataset.color] || colorMap.primary;
+      var c = colorMap[el.dataset.color];
       if (c) { el.style.color = c; el.style.borderColor = c; }
     });
 
     function update() {
-      if (!track || !orb) return;
-      var trackRect = track.getBoundingClientRect();
-      var progress  = (window.innerHeight / 2) - trackRect.top;
-      var orbPos    = Math.max(0, Math.min(progress, trackRect.height));
+      if (!track || !train) return;
 
-      orb.style.opacity   = progress > 0 ? '1' : '0';
-      orb.style.transform = 'translate(-50%, ' + orbPos + 'px)';
+      var trackRect  = track.getBoundingClientRect();
+      var trackTop   = trackRect.top;
+      var trackH     = trackRect.height;
+      var winH       = window.innerHeight;
+      var progress   = (winH / 2) - trackTop;
+      var trainPos   = Math.max(0, Math.min(progress, trackH));
 
-      var orbRect   = orb.getBoundingClientRect();
-      var orbCenter = orbRect.top + orbRect.height / 2;
+      // Show/hide character
+      train.style.opacity   = progress > 0 ? '1' : '0';
+      train.style.transform = 'translate(-50%, ' + trainPos + 'px)';
+
+      // Cycle sprites based on scroll progress
+      var pct = totalSprites > 0 ? Math.max(0, Math.min(trainPos / trackH, 1)) : 0;
+      var target = Math.min(Math.floor(pct * totalSprites) + 1, totalSprites);
+      if (target !== currentSprite) {
+        currentSprite = target;
+        sprites.forEach(function (s) {
+          s.style.opacity = parseInt(s.dataset.spriteIndex) === currentSprite ? '1' : '0';
+        });
+      }
+
+      // Fill markers as character passes them
+      var trainRect  = train.getBoundingClientRect();
+      var trainCent  = trainRect.top + trainRect.height / 2;
 
       markers.forEach(function (marker) {
-        var mRect  = marker.getBoundingClientRect();
-        var mCent  = mRect.top + mRect.height / 2;
-        var color  = colorMap[marker.dataset.color] || colorMap.primary;
+        var mRect = marker.getBoundingClientRect();
+        var mCent = mRect.top + mRect.height / 2;
+        var color = colorMap[marker.dataset.color] || '#3B4A6B';
 
-        if (orbCenter >= mCent) {
+        if (trainCent >= mCent) {
           marker.classList.add('scale-125');
           marker.style.backgroundColor = color;
           marker.style.borderColor     = color;
@@ -289,12 +302,6 @@
 
     window.addEventListener('scroll', function () {
       if (!ticking) { requestAnimationFrame(update); ticking = true; }
-    });
-
-    // Re-resolve primary when theme toggles
-    document.addEventListener('themechange', function () {
-      var r = getComputedStyle(root).getPropertyValue('--color-primary').trim();
-      colorMap.primary = r || '#3B4A6B';
     });
 
     update();

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120">
+  <!-- Stage 8: Professional Engineer with chip/achievement -->
+  <!-- Head -->
+  <circle cx="40" cy="20" r="13" fill="#FDBCB4" stroke="#333" stroke-width="1.5"/>
+  <!-- Hair -->
+  <path d="M27 16 Q40 5 53 16 Q52 9 40 8 Q28 9 27 16Z" fill="#1A0A00"/>
+  <!-- Confident eyes -->
+  <circle cx="35" cy="19" r="2.2" fill="#333"/>
+  <circle cx="45" cy="19" r="2.2" fill="#333"/>
+  <!-- Big confident smile -->
+  <path d="M33 25 Q40 31 47 25" stroke="#333" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  <!-- Neck -->
+  <rect x="37" y="32" width="6" height="5" rx="1" fill="#FDBCB4"/>
+  <!-- Smart casual jacket -->
+  <rect x="25" y="36" width="30" height="24" rx="4" fill="#2C3E50" stroke="#333" stroke-width="1"/>
+  <!-- Jacket lapels -->
+  <path d="M37 36 L34 44 L40 41 L46 44 L43 36" fill="#3D5166" stroke="#333" stroke-width="0.8"/>
+  <!-- Shirt underneath -->
+  <path d="M38 36 L40 42 L42 36" fill="#E8E8E8"/>
+  <!-- Pants -->
+  <rect x="29" y="58" width="9" height="22" rx="2" fill="#1A2538" stroke="#333" stroke-width="1"/>
+  <rect x="42" y="58" width="9" height="22" rx="2" fill="#1A2538" stroke="#333" stroke-width="1"/>
+  <!-- Shoes -->
+  <ellipse cx="34" cy="81" rx="5.5" ry="3" fill="#0A0A0A"/>
+  <ellipse cx="46" cy="81" rx="5.5" ry="3" fill="#0A0A0A"/>
+  <!-- Arms (one arm raised holding chip, one at side) -->
+  <line x1="25" y1="42" x2="12" y2="38" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
+  <line x1="55" y1="42" x2="65" y2="55" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
+  <!-- Silicon chip held up proudly -->
+  <rect x="4" y="28" width="14" height="14" rx="1" fill="#C0C0C0" stroke="#333" stroke-width="1"/>
+  <rect x="6" y="30" width="10" height="10" rx="0.5" fill="#1a1a2e"/>
+  <!-- Chip pins -->
+  <line x1="6" y1="28" x2="6" y2="25" stroke="#AAA" stroke-width="0.8"/>
+  <line x1="9" y1="28" x2="9" y2="25" stroke="#AAA" stroke-width="0.8"/>
+  <line x1="12" y1="28" x2="12" y2="25" stroke="#AAA" stroke-width="0.8"/>
+  <line x1="15" y1="28" x2="15" y2="25" stroke="#AAA" stroke-width="0.8"/>
+  <line x1="6" y1="42" x2="6" y2="45" stroke="#AAA" stroke-width="0.8"/>
+  <line x1="9" y1="42" x2="9" y2="45" stroke="#AAA" stroke-width="0.8"/>
+  <line x1="12" y1="42" x2="12" y2="45" stroke="#AAA" stroke-width="0.8"/>
+  <line x1="15" y1="42" x2="15" y2="45" stroke="#AAA" stroke-width="0.8"/>
+  <!-- Circuit traces on chip -->
+  <line x1="8" y1="32" x2="14" y2="32" stroke="#4A90D9" stroke-width="0.8"/>
+  <line x1="8" y1="35" x2="14" y2="35" stroke="#E8C547" stroke-width="0.8"/>
+  <line x1="8" y1="38" x2="14" y2="38" stroke="#7EC8A4" stroke-width="0.8"/>
+  <!-- Star/glow around chip (achievement) -->
+  <circle cx="11" cy="35" r="9" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.6" stroke-dasharray="2,2"/>
+</svg>

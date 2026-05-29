@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120">
+  <!-- Stage 3: Student with laptop, starting to code -->
+  <!-- Head -->
+  <circle cx="40" cy="22" r="13" fill="#FDBCB4" stroke="#333" stroke-width="1.5"/>
+  <!-- Hair -->
+  <path d="M27 18 Q40 7 53 18 Q52 11 40 9 Q28 11 27 18Z" fill="#1A0A00"/>
+  <!-- Eyes (focused, slightly squinted) -->
+  <ellipse cx="35" cy="21" rx="2.2" ry="1.8" fill="#333"/>
+  <ellipse cx="45" cy="21" rx="2.2" ry="1.8" fill="#333"/>
+  <!-- Neutral expression -->
+  <path d="M36 27 Q40 29 44 27" stroke="#333" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <!-- Neck -->
+  <rect x="37" y="34" width="6" height="5" rx="1" fill="#FDBCB4"/>
+  <!-- Body (hoodie) -->
+  <rect x="27" y="38" width="26" height="23" rx="4" fill="#3D3D5C" stroke="#333" stroke-width="1"/>
+  <!-- Hoodie pocket -->
+  <path d="M33 55 Q40 53 47 55 L47 60 L33 60Z" fill="#2C2C45" stroke="#333" stroke-width="0.8"/>
+  <!-- Jeans -->
+  <rect x="29" y="59" width="9" height="22" rx="2" fill="#34495E" stroke="#333" stroke-width="1"/>
+  <rect x="42" y="59" width="9" height="22" rx="2" fill="#34495E" stroke="#333" stroke-width="1"/>
+  <!-- Shoes (sneakers) -->
+  <ellipse cx="34" cy="82" rx="5.5" ry="3" fill="#E8502A"/>
+  <ellipse cx="46" cy="82" rx="5.5" ry="3" fill="#E8502A"/>
+  <!-- Arms reaching forward -->
+  <line x1="27" y1="44" x2="14" y2="62" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
+  <line x1="53" y1="44" x2="66" y2="62" stroke="#FDBCB4" stroke-width="4" stroke-linecap="round"/>
+  <!-- Laptop -->
+  <rect x="6" y="60" width="22" height="14" rx="1" fill="#C0C0C0" stroke="#333" stroke-width="1"/>
+  <rect x="7" y="61" width="20" height="10" rx="0.5" fill="#1a1a2e"/>
+  <!-- Code on screen -->
+  <text x="9" y="67" font-size="3" fill="#00FF41" font-family="monospace">&gt;_ code</text>
+  <rect x="6" y="74" width="22" height="2" rx="1" fill="#888" stroke="#333" stroke-width="0.5"/>
+</svg>
