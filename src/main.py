@@ -471,7 +471,7 @@ def build_markdown(pygments_theme, markdown_config=None):
             "fenced_code", "codehilite", "footnotes", "tables",
             "attr_list", "sane_lists", "md_in_html", "toc",
         ]
-        extension_configs["toc"] = {"permalink": True}
+        extension_configs["toc"] = {"permalink": False}
     else:
         for ext in config_extensions:
             if isinstance(ext, str):

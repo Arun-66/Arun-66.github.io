@@ -14,8 +14,8 @@
   pointer-events: none;
   z-index: 9998;
   background: radial-gradient(
-    400px circle at var(--halo-x, 50vw) var(--halo-y, 50vh),
-    rgba(59, 74, 107, 0.09),
+    250px circle at var(--halo-x, 50vw) var(--halo-y, 50vh),
+    rgba(59, 74, 107, 0.14),
     transparent 70%
   );
   mix-blend-mode: multiply;
@@ -23,8 +23,8 @@
 
 [data-theme="academic-dark"] #cursor-halo {
   background: radial-gradient(
-    400px circle at var(--halo-x, 50vw) var(--halo-y, 50vh),
-    rgba(123, 143, 196, 0.08),
+    250px circle at var(--halo-x, 50vw) var(--halo-y, 50vh),
+    rgba(123, 143, 196, 0.12),
     transparent 70%
   );
   mix-blend-mode: screen;
