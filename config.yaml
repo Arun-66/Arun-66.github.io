@@ -87,7 +87,7 @@ markdown:
     - sane_lists
     - md_in_html
     - toc:
-        permalink: true
+        permalink: false
 
 images:
   formats:
