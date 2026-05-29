@@ -250,10 +250,25 @@ export default defineConfig(async ({ command }) => {
     '!templates/**', '!_includes/**', '!_layouts/**', '!_sass/**',
   ]);
 
+  const copy_static_plugin = () => ({
+    name: 'copy-static',
+    closeBundle() {
+      const src = path.join(__dirname, 'assets', 'pdf');
+      const dest = path.join(__dirname, 'dist', 'assets', 'pdf');
+      if (fs.existsSync(src)) {
+        fs.mkdirSync(dest, { recursive: true });
+        for (const f of fs.readdirSync(src)) {
+          fs.copyFileSync(path.join(src, f), path.join(dest, f));
+        }
+      }
+    },
+  });
+
   return {
     plugins: [
       py_build_plugin(),
       tailwindcss(),
+      copy_static_plugin(),
     ],
     build: {
       outDir: './dist',
