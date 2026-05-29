@@ -158,13 +158,13 @@
 
       <!-- Text block -->
       <div class="flex-1 max-w-xl">
-        <h1 class="font-heading font-semibold text-3xl md:text-4xl tracking-tight text-base-content leading-tight">
+        <h1 class="font-heading font-semibold text-3xl md:text-5xl tracking-tight text-base-content leading-tight">
           Devesh Bhaskaran
         </h1>
-        <p class="mt-3 text-base-content/60 text-base leading-relaxed max-w-md">
+        <p class="mt-4 text-base-content/60 text-base leading-relaxed max-w-md font-light">
           Working at the boundary where digital, analog, and RF have to learn to live together.
         </p>
-        <div class="mt-2 font-mono text-xs text-base-content/40 tracking-wide">
+        <div class="mt-3 font-mono text-xs text-base-content/35 tracking-wide">
           Digital Design Engineer · Analog Devices India · Bengaluru, Karnataka
         </div>
 
@@ -212,7 +212,7 @@
       <!-- Profile photo -->
       
       <div class="flex-shrink-0">
-        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden ring-1 ring-base-300">
+        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden ring-1 ring-base-200/80">
           <img src="/assets/img/prof_pic.jpg" alt="Devesh Bhaskaran"
                class="w-full h-full object-cover object-center" loading="eager">
         </div>
@@ -222,19 +222,20 @@
   </section>
 
   <!-- ── About ─────────────────────────────────────────────────── -->
-  <section class="pb-16 border-t border-base-200 pt-12">
+  <section class="pb-16 border-t border-base-200/60 pt-12">
     <div class="eyebrow mb-5">About</div>
-    <div class="prose prose-sm md:prose-base max-w-none leading-relaxed
+    <div class="prose prose-sm md:prose-base max-w-none leading-relaxed text-justify
                 prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+                prose-headings:text-left
                 dark:prose-invert">
       <p>I'm a Digital Design Engineer at <a href="https://www.analog.com/">Analog Devices India</a>, working on PHYs, PLLs, and timing systems for the next generation of battery-management ICs in electric vehicles. The work spans 10BASE-T1S PHY design, PLLs, GPT, UART, and PWM architectures, with a focus on functional safety and system-level timing analysis.</p>
 <p>I trained as an Electronics and Communication Engineer at <a href="https://pes.edu/">PES University</a>, where I graduated in August 2025 with a GPA of 9.32/10. I was awarded the Silver Medal for ranking 9th in the university and named Best Outgoing Student of the ECE department. Alongside coursework, I held two teaching assistantships — one on RF Microelectronics, where I built Spectre RF simulation workflows for oscillator design, and one on Computer Organization, where I taught RISC-V assembly and helped students build single-cycle RISC-V processors.</p>
-<h3 id="research-interests">Research interests<a class="headerlink" href="#research-interests" title="Permanent link">&para;</a></h3>
+<h3 id="research-interests">Research interests</h3>
 <p>I'm moving toward doctoral research at the intersection of digital, analog, and RF design. The questions that draw me: how do we build resilient, energy-efficient mixed-signal systems for embedded applications without sacrificing performance? What does next-generation timing look like at scales where conventional architectures hit their limits?</p>
 <p>My published work to date has touched all three corners of this space — low phase-noise quadrature DCOs in 55nm CMOS, VCO-based ADC architectures, and semantic segmentation for person identification. Most recently, I've been working on hardware acceleration of YOLOv8 using algorithmic compression and posit-based approximate computing.</p>
-<h3 id="leadership-and-community">Leadership and community<a class="headerlink" href="#leadership-and-community" title="Permanent link">&para;</a></h3>
+<h3 id="leadership-and-community">Leadership and community</h3>
 <p>I co-founded the IEEE RAS and Sensors Council Student Branch at PES University and served as its Treasurer. I was President of the IEEE SSCS and Photonics Student Branch, where I hosted Prof. Shanthi Pavan from IIT Madras for IEEE Day and organized layout hackathons in collaboration with Marvell Technology. I led mentorship for the InFeynite Hackathon and, in June 2025, served as a workshop instructor for a 5-day SoC Architecture program at the IoT MakerSpace.</p>
-<h3 id="outside-the-lab">Outside the lab<a class="headerlink" href="#outside-the-lab" title="Permanent link">&para;</a></h3>
+<h3 id="outside-the-lab">Outside the lab</h3>
 <p>I read a fair amount — papers, but also long-form non-fiction. I cook, I hike when Bengaluru's weather cooperates, and I watch more cinema than I probably should admit.</p>
 <p>If our interests overlap, I'd genuinely like to hear from you.</p>
     </div>
@@ -242,7 +243,7 @@
 
   <!-- ── Journey (timeline) ────────────────────────────────────── -->
   
-  <section class="pb-16 border-t border-base-200 pt-12">
+  <section class="pb-16 border-t border-base-200/60 pt-12">
     <div class="eyebrow mb-8">Journey</div>
     <div class="pl-4 timeline-track space-y-8">
       
@@ -288,40 +289,36 @@
 
   <!-- ── Selected publications ────────────────────────────────── -->
   
-  <section class="pb-16 border-t border-base-200 pt-12">
+  <section class="pb-16 border-t border-base-200/60 pt-12">
     <div class="eyebrow mb-8">Selected Work</div>
-    <div class="space-y-4">
+    <div class="border-t border-base-200/40">
       
       <a href="https://doi.org/10.1109/APCCAS67402.2025.11376789" target="_blank" rel="noopener"
-         class="card-glow block border border-base-200 rounded-lg p-5 hover:border-primary/30 transition-colors group">
-        <div class="flex items-start gap-3">
-          <span class="pub-abbr text-primary/70 mt-0.5 flex-shrink-0">APCCAS</span>
-          <div class="min-w-0">
-            <p class="text-sm font-medium text-base-content leading-snug group-hover:text-primary transition-colors">
-              Design of a Low Phase Noise Quadrature DCO Using Dual Superharmonic Injection in 55nm CMOS for Ka-Band Applications
-            </p>
-            <div class="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-mono text-base-content/40">
-              <span>IEEE APCCAS 2025</span>
-              <span class="hidden sm:inline">·</span>
-              <span>Devesh Bhaskaran, Shashidhar Tantry</span>
-            </div>
+         class="group flex items-start gap-5 py-5 border-b border-base-200/40 hover:pl-1 transition-all duration-200">
+        <span class="pub-abbr text-primary/50 mt-0.5 flex-shrink-0 w-14">APCCAS</span>
+        <div class="min-w-0">
+          <p class="text-sm font-medium text-base-content leading-snug group-hover:text-primary transition-colors">
+            Design of a Low Phase Noise Quadrature DCO Using Dual Superharmonic Injection in 55nm CMOS for Ka-Band Applications
+          </p>
+          <div class="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-mono text-base-content/35">
+            <span>IEEE APCCAS 2025</span>
+            <span class="hidden sm:inline opacity-40">·</span>
+            <span>Devesh Bhaskaran, Shashidhar Tantry</span>
           </div>
         </div>
       </a>
       
       <a href="https://doi.org/10.1109/NKCon66957.2025.11345792" target="_blank" rel="noopener"
-         class="card-glow block border border-base-200 rounded-lg p-5 hover:border-primary/30 transition-colors group">
-        <div class="flex items-start gap-3">
-          <span class="pub-abbr text-primary/70 mt-0.5 flex-shrink-0">NKCon</span>
-          <div class="min-w-0">
-            <p class="text-sm font-medium text-base-content leading-snug group-hover:text-primary transition-colors">
-              Performance Analysis of LC Tank VCO-Based ADC and Current Starved VCO-Based ADC
-            </p>
-            <div class="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-mono text-base-content/40">
-              <span>IEEE NKCon 2025</span>
-              <span class="hidden sm:inline">·</span>
-              <span>Devesh Bhaskaran et al.</span>
-            </div>
+         class="group flex items-start gap-5 py-5 border-b border-base-200/40 hover:pl-1 transition-all duration-200">
+        <span class="pub-abbr text-primary/50 mt-0.5 flex-shrink-0 w-14">NKCon</span>
+        <div class="min-w-0">
+          <p class="text-sm font-medium text-base-content leading-snug group-hover:text-primary transition-colors">
+            Performance Analysis of LC Tank VCO-Based ADC and Current Starved VCO-Based ADC
+          </p>
+          <div class="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-mono text-base-content/35">
+            <span>IEEE NKCon 2025</span>
+            <span class="hidden sm:inline opacity-40">·</span>
+            <span>Devesh Bhaskaran et al.</span>
           </div>
         </div>
       </a>
@@ -337,18 +334,20 @@
 
   <!-- ── Latest blog post ──────────────────────────────────────── -->
   
-  <section class="pb-16 border-t border-base-200 pt-12">
+  <section class="pb-16 border-t border-base-200/60 pt-12">
     <div class="eyebrow mb-8">From the Blog</div>
     
     <a href="/posts/2025-05-01-satcom-transceivers/"
-       class="card-glow block border border-base-200 rounded-lg p-5 hover:border-primary/30 transition-colors group">
-      <div class="font-mono text-xs text-base-content/35 mb-2">2025-05-01</div>
-      <h3 class="font-heading font-medium text-base text-base-content group-hover:text-primary transition-colors leading-snug">
-        SATCOM transceivers — how they work and where the hard problems are
-      </h3>
-      
-      <p class="mt-2 text-sm text-base-content/55 leading-relaxed line-clamp-2">A technical overview of satellite communication transceiver architecture, with a focus on Ka-band systems and the open IC design problems that still don't have clean answers.</p>
-      
+       class="group flex items-baseline gap-6 py-4 border-b border-base-200/40 hover:pl-1 transition-all duration-200">
+      <span class="font-mono text-xs text-base-content/30 flex-shrink-0 w-24 tabular-nums">2025-05-01</span>
+      <div class="min-w-0">
+        <h3 class="font-heading font-medium text-base text-base-content group-hover:text-primary transition-colors leading-snug">
+          SATCOM transceivers — how they work and where the hard problems are
+        </h3>
+        
+        <p class="mt-1 text-sm text-base-content/45 leading-relaxed line-clamp-1">A technical overview of satellite communication transceiver architecture, with a focus on Ka-band systems and the open IC design problems that still don't have clean answers.</p>
+        
+      </div>
     </a>
     <div class="mt-5">
       <a href="/blog/" class="text-xs font-mono text-primary/70 hover:text-primary transition-colors">
@@ -426,7 +425,7 @@
 
       var tx = window.innerWidth / 2, ty = window.innerHeight / 2;
       var cx = tx, cy = ty;
-      var LERP = 0.09;
+      var LERP = 0.05;
 
       document.addEventListener('mousemove', function (e) {
         tx = e.clientX;
@@ -450,6 +449,118 @@
           card.style.setProperty('--card-y', (e.clientY - r.top) + 'px');
         });
       });
+    })();
+  </script>
+
+  <!-- Pixel chip cursor follower -->
+  <script>
+    (function () {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      if (window.matchMedia('(hover: none)').matches) return;
+
+      var dpr = window.devicePixelRatio || 1;
+      var canvas = document.createElement('canvas');
+      canvas.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:9999;';
+      document.body.appendChild(canvas);
+      var ctx = canvas.getContext('2d');
+
+      function resize() {
+        canvas.width  = window.innerWidth  * dpr;
+        canvas.height = window.innerHeight * dpr;
+        canvas.style.width  = window.innerWidth  + 'px';
+        canvas.style.height = window.innerHeight + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      var tx = window.innerWidth / 2, ty = window.innerHeight / 2;
+      var cx = tx, cy = ty;
+      var LERP     = 0.07;
+      var LINGER   = 900;   /* trail dot lifetime ms */
+      var trail    = [];    /* [{x, y, t}] newest first */
+
+      document.addEventListener('mousemove', function (e) { tx = e.clientX; ty = e.clientY; });
+
+      function rgb() {
+        return document.documentElement.getAttribute('data-theme') === 'academic-dark'
+          ? [123, 143, 196] : [59, 74, 107];
+      }
+
+      function drawChip(x, y, r) {
+        var B  = 14;
+        var H  = B / 2;
+        var PW = 3;
+        var PD = 4;
+        var c  = 'rgb(' + r[0] + ',' + r[1] + ',' + r[2] + ')';
+
+        ctx.fillStyle = c;
+        ctx.fillRect(x - H, y - H, B, B);
+
+        var px = [x - 5, x - 1, x + 3];
+        for (var i = 0; i < 3; i++) {
+          ctx.fillRect(px[i], y - H - PD, PW, PD);
+          ctx.fillRect(px[i], y + H,      PW, PD);
+        }
+
+        var py = [y - 4, y + 1];
+        for (var j = 0; j < 2; j++) {
+          ctx.fillRect(x - H - PD, py[j], PD, PW);
+          ctx.fillRect(x + H,      py[j], PD, PW);
+        }
+
+        ctx.beginPath();
+        ctx.arc(x - H + 2.5, y - H + 2.5, 1.5, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(' + r[0] + ',' + r[1] + ',' + r[2] + ',0.35)';
+        ctx.fill();
+
+        ctx.fillStyle = 'rgba(255,255,255,0.18)';
+        ctx.fillRect(x - 1, y - 4, 2, 8);
+        ctx.fillRect(x - 4, y - 1, 8, 2);
+      }
+
+      function tick() {
+        var now = performance.now();
+        cx += (tx - cx) * LERP;
+        cy += (ty - cy) * LERP;
+
+        /* record position with timestamp, every ~2 frames to avoid overdensity */
+        var last = trail[0];
+        var dx = last ? cx - last.x : 99;
+        var dy = last ? cy - last.y : 99;
+        if (!last || dx * dx + dy * dy > 4) {
+          trail.unshift({ x: cx, y: cy, t: now });
+        }
+
+        /* expire old dots */
+        while (trail.length && now - trail[trail.length - 1].t > LINGER) trail.pop();
+
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+        var r   = rgb();
+        var col = 'rgb(' + r[0] + ',' + r[1] + ',' + r[2] + ')';
+
+        /* draw trail oldest → newest so newer dots paint on top */
+        for (var i = trail.length - 1; i > 0; i--) {
+          var age   = (now - trail[i].t) / LINGER;   /* 0=fresh 1=expired */
+          var alpha = (1 - age) * 0.5;
+          var size  = Math.max(1, Math.round((1 - age) * 3));
+          ctx.globalAlpha = alpha;
+          ctx.fillStyle   = col;
+          ctx.fillRect(
+            Math.round(trail[i].x) - Math.floor(size / 2),
+            Math.round(trail[i].y) - Math.floor(size / 2),
+            size, size
+          );
+        }
+
+        ctx.globalAlpha = 1;
+        drawChip(Math.round(cx), Math.round(cy), r);
+
+        requestAnimationFrame(tick);
+      }
+
+      requestAnimationFrame(tick);
     })();
   </script>
 </body>
