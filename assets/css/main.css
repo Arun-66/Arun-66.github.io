@@ -15,10 +15,9 @@
   z-index: 9998;
   background: radial-gradient(
     220px circle at var(--halo-x, 50vw) var(--halo-y, 50vh),
-    rgba(59, 74, 107, 0.18),
+    rgba(175, 130, 60, 0.13),
     transparent 65%
   );
-  mix-blend-mode: multiply;
 }
 
 [data-theme="academic-dark"] #cursor-halo {
