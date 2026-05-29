@@ -134,7 +134,7 @@ html {
 
 /* ── Navbar backdrop blur fallback ───────────────────────────── */
 .navbar-blur {
-  background: rgba(243, 237, 230, 0.88);
+  background: rgba(237, 228, 216, 0.90);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }

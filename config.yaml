@@ -11,9 +11,9 @@ theme:
   custom:
     academic-light: |
       color-scheme: light;
-      --color-base-100: #F3EDE6;
-      --color-base-200: #E9E0D6;
-      --color-base-300: #DAD0C4;
+      --color-base-100: #EDE4D8;
+      --color-base-200: #E2D8CA;
+      --color-base-300: #D3C8B8;
       --color-base-content: #1A1A1A;
       --color-primary: #3B4A6B;
       --color-primary-content: #FFFFFF;
@@ -68,9 +68,9 @@ theme:
 
 fonts:
   imports:
-    - "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    - "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
   families:
-    body: "'Inter', system-ui, sans-serif"
+    body: "'DM Sans', system-ui, sans-serif"
     heading: "'Plus Jakarta Sans', system-ui, sans-serif"
     mono: "'IBM Plex Mono', ui-monospace, monospace"
 
