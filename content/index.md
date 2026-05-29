@@ -27,11 +27,19 @@ I'm a final-year Electronics and Communications Engineering student at [PES Univ
 
 My work spans the full hardware stack: RTL design and verification in SystemVerilog and Verilog, physical design through RTL-to-GDSII flows using Cadence toolchains, and FPGA implementation on Xilinx platforms. Projects have ranged from a complete RV32IM SoC with UART and SPI peripherals to a full FIFO implementation taken from RTL to GDSII using the SCL180 PDK, to hardware-software co-design for AES encryption on PYNQ-Z2.
 
-### Interests
+### Research interests
 
-My core interest is in digital hardware — how you design, verify, and physically implement systems that are correct, efficient, and manufacturable. I'm drawn to problems at the boundary of RTL and physical design, where timing, area, and power constraints interact. I'm also interested in hardware acceleration: database acceleration on Alveo cards (Vitis Libraries, Alveo U50) and FPGA-based ML inference are projects I've worked on.
+**Processor and SoC design** — I've built multiple RISC-V cores from scratch: an RV32I core, an RV32IM core with full integer and multiply/divide support, and a complete SoC integrating UART and SPI peripherals with FPGA validation. The questions that interest me are around microarchitecture trade-offs, pipeline design, and how processors integrate with the rest of a system.
 
-I hold a publication on silver-decorated polyaniline nanocomposites (Ag-PANI) for EMI shielding, developed during my time as a Student Researcher at Quanad Lab.
+**FPGA-based neural network acceleration** — I've implemented both LeNet-5 and AlexNet on FPGAs using Vitis HLS, targeting the ZCU104 and PYNQ platforms. The challenge of mapping compute-intensive inference workloads onto fixed hardware — making the right decisions about parallelism, memory bandwidth, and precision — is what draws me here.
+
+**Hardware security** — I've built AES encryption accelerators twice: once in Intel Quartus Prime (The Enigma) and once as a hardware-software co-design on PYNQ-Z2, with the datapath on the FPGA fabric and key generation in software over AXI. Cryptographic hardware is an area I want to go deeper in.
+
+**Hardware verification** — At InCore Semiconductors I work on AMBA AHB/APB/AXI4 verification using Embedded UVM in D, building scalable verification frameworks that can be reused across multiple DUTs. Formal and functional correctness of hardware is a problem I find genuinely interesting.
+
+**Physical design** — I've taken a FIFO from RTL through the full Cadence flow to GDSII using the SCL180 PDK, covering synthesis, placement and routing, timing closure, and DRC/LVS. I'm interested in the constraints that physical implementation puts on digital design decisions.
+
+I also hold a publication on silver-decorated polyaniline nanocomposites (Ag-PANI) for EMI shielding, from my time as a Student Researcher at Quanad Lab.
 
 ### Leadership
 

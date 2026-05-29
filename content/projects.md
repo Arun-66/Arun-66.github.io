@@ -36,6 +36,12 @@ categories:
 
   - name: "Hardware Acceleration & HPC"
     entries:
+      - title: "AlexNet FPGA Implementation (ZCU104)"
+        description: "Full AlexNet CNN implemented on the Xilinx ZCU104 using Vitis HLS, with custom weight/bias generation scripts and layer-by-layer FPGA validation."
+        tags: [Vitis HLS, ZCU104, AlexNet, CNN, FPGA, Python]
+        slug: "alexnet-zcu104"
+        url: "https://github.com/Arun-66/AN50_ZCU104"
+
       - title: "PostgreSQL Acceleration on Alveo U50"
         description: "Database accelerator for PostgreSQL workloads on the Xilinx Alveo U50 card using Vitis Libraries."
         tags: [Vitis, HLS, Alveo U50, HPC, Database Acceleration]
